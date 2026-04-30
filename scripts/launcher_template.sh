@@ -4,7 +4,7 @@
 # Bridge Game Finder launcher
 # ----------------------------------------
 
-PROJECT_DIR="$HOME/Casual_claude/Bridge_Tournaments"
+PROJECT_DIR="$HOME/Casual_claude/Bridge_Club_Games"
 
 cd "$PROJECT_DIR" || { echo "Could not cd to $PROJECT_DIR"; exec zsh -i; }
 
