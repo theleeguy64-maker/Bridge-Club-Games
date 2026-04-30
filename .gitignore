@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+reports/
+.fresh-chat-context.md
+.auto-restart-fresh
