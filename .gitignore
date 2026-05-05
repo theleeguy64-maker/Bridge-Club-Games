@@ -3,5 +3,6 @@ __pycache__/
 .env
 .venv/
 reports/
+data/
 .fresh-chat-context.md
 .auto-restart-fresh

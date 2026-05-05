@@ -145,7 +145,12 @@
     "results_url": "https://www.bridgewebs.com/ascot/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -159,7 +164,12 @@
     "results_url": "https://www.bridgewebs.com/bewdley/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -173,7 +183,12 @@
     "results_url": "https://www.bridgewebs.com/hadleywood/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -187,7 +202,12 @@
     "results_url": "https://www.bridgewebs.com/keyworth/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -201,7 +221,12 @@
     "results_url": "https://www.bridgewebs.com/miltonkeynes/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -215,7 +240,12 @@
     "results_url": "https://www.bridgewebs.com/trurocornwall/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -229,7 +259,12 @@
     "results_url": "https://www.bridgewebs.com/abbeygate/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -243,7 +278,12 @@
     "results_url": "https://www.bridgewebs.com/balsham/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -257,7 +297,12 @@
     "results_url": "https://www.bridgewebs.com/basingstoke/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -271,7 +316,12 @@
     "results_url": "https://www.bridgewebs.com/bracknellforest/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -285,7 +335,12 @@
     "results_url": "https://www.bridgewebs.com/chelmsford/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -299,7 +354,12 @@
     "results_url": "https://www.bridgewebs.com/christchurch/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -313,7 +373,12 @@
     "results_url": "https://www.bridgewebs.com/crossinhand/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -327,7 +392,12 @@
     "results_url": "https://www.bridgewebs.com/summertown/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder; Summertown BC (Oxford) used as primary slug"
@@ -341,7 +411,12 @@
     "results_url": "https://www.bridgewebs.com/farnham/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -355,7 +430,12 @@
     "results_url": "https://www.bridgewebs.com/faringdon/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -369,7 +449,12 @@
     "results_url": "https://www.bridgewebs.com/greatyarmouth/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -383,7 +468,12 @@
     "results_url": "https://www.bridgewebs.com/taverham/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -397,7 +487,12 @@
     "results_url": "https://www.bridgewebs.com/hemelhempstead/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -411,7 +506,12 @@
     "results_url": "https://www.bridgewebs.com/laneend/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -425,7 +525,12 @@
     "results_url": "https://www.bridgewebs.com/leightonbuzzard/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -439,7 +544,12 @@
     "results_url": "https://www.bridgewebs.com/louth/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -453,7 +563,12 @@
     "results_url": "https://www.bridgewebs.com/smaxibridge/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder; beginner/improver focused"
@@ -467,7 +582,12 @@
     "results_url": "https://www.bridgewebs.com/wallingford/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -476,239 +596,267 @@
     "name": "3 Counties Bridge Club (Tue PM)",
     "platform": "RealBridge",
     "day": "Tue",
-    "time_uk": "14:00",
+    "time_uk": "15:00",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/3counties/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
-  },
-  {
-    "name": "Allendale Bridge Club (Tue PM)",
-    "platform": "RealBridge",
-    "day": "Tue",
-    "time_uk": "14:00",
-    "cost": "",
-    "results_url": "https://www.bridgewebs.com/allendale/",
-    "parser": "bridgewebs",
-    "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
-    "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-04",
+    "notes": "Verified from club site: Tue 3pm RealBridge"
   },
   {
     "name": "Wallingford Bridge Club (Tue PM)",
     "platform": "RealBridge",
     "day": "Tue",
-    "time_uk": "14:00",
+    "time_uk": "13:45",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/wallingford/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-04",
+    "notes": "Verified from club site: Tue 1:45pm RealBridge online (also has F2F evening — excluded)"
   },
   {
-    "name": "Abingdon Bridge Club (Tue PM)",
+    "name": "Abingdon Bridge Club (Tue Evening)",
     "platform": "RealBridge",
     "day": "Tue",
-    "time_uk": "14:00",
+    "time_uk": "19:00",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/abingdon/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-04",
+    "notes": "Verified from club site: Tue 7pm RealBridge (varies by week-of-month)"
   },
   {
-    "name": "Allendale & Wymondham Bridge Club (Tue PM)",
+    "name": "Ascot Bridge Club (Tue Evening)",
     "platform": "RealBridge",
     "day": "Tue",
-    "time_uk": "14:00",
-    "cost": "",
-    "results_url": "https://www.bridgewebs.com/allendale/",
-    "parser": "bridgewebs",
-    "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
-    "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder; Allendale used as primary slug"
-  },
-  {
-    "name": "Ascot Bridge Club (Tue PM)",
-    "platform": "RealBridge",
-    "day": "Tue",
-    "time_uk": "14:00",
+    "time_uk": "19:30",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/ascot/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-04",
+    "notes": "Verified from club site: Tuesday 7:30pm Online RealBridge"
   },
   {
-    "name": "Basingstoke Bridge Club (Tue PM)",
+    "name": "Basingstoke Bridge Club (Tue Evening)",
     "platform": "RealBridge",
     "day": "Tue",
-    "time_uk": "14:00",
+    "time_uk": "19:00",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/basingstoke/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-04",
+    "notes": "Verified from club site: Tue evening 9-High pairs RealBridge; time placeholder"
   },
   {
-    "name": "Bradshaw Bridge Club (Tue PM)",
+    "name": "Bradshaw Bridge Club (Tue Evening)",
     "platform": "RealBridge",
     "day": "Tue",
-    "time_uk": "14:00",
+    "time_uk": "19:30",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/bradshaw/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-04",
+    "notes": "Verified from club site: Tue 7:30pm RealBridge"
   },
   {
-    "name": "Chelmsford Bridge Club (Tue PM)",
+    "name": "Chelmsford Bridge Club (Tue Evening)",
     "platform": "RealBridge",
     "day": "Tue",
-    "time_uk": "14:00",
+    "time_uk": "19:00",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/chelmsford/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-04",
+    "notes": "Verified from club site: Tue 7pm RealBridge"
   },
   {
-    "name": "Droitwich Bridge Club (Tue PM)",
+    "name": "Droitwich Bridge Club (Tue Evening)",
     "platform": "RealBridge",
     "day": "Tue",
-    "time_uk": "14:00",
+    "time_uk": "19:00",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/droitwich/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-04",
+    "notes": "Verified from club site: Tue 7pm RealBridge"
   },
   {
-    "name": "Finchampstead Bridge Club (Tue PM)",
+    "name": "Finchampstead Bridge Club (Tue Evening)",
     "platform": "RealBridge",
     "day": "Tue",
-    "time_uk": "14:00",
+    "time_uk": "19:00",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/finchampstead/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-04",
+    "notes": "Verified from club site: Tue 7pm RealBridge"
   },
   {
-    "name": "Grantham Bridge Club (Tue PM)",
+    "name": "Grantham Bridge Club (Tue Evening)",
     "platform": "RealBridge",
     "day": "Tue",
-    "time_uk": "14:00",
+    "time_uk": "19:00",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/grantham/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-04",
+    "notes": "Verified from club site: Tue 7pm RealBridge (joint with Keyworth)"
   },
   {
-    "name": "Great Yarmouth Bridge Club (Tue PM)",
+    "name": "Hadley Wood Bridge Club (Tue Evening)",
     "platform": "RealBridge",
     "day": "Tue",
-    "time_uk": "14:00",
-    "cost": "",
-    "results_url": "https://www.bridgewebs.com/greatyarmouth/",
-    "parser": "bridgewebs",
-    "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
-    "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
-  },
-  {
-    "name": "Hadley Wood Bridge Club (Tue PM)",
-    "platform": "RealBridge",
-    "day": "Tue",
-    "time_uk": "14:00",
+    "time_uk": "19:30",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/hadleywood/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-04",
+    "notes": "Verified from club site: Tue 7:30pm RealBridge"
   },
   {
-    "name": "Harpenden Bridge Club (Tue PM)",
+    "name": "Harpenden Bridge Club (Tue Evening)",
     "platform": "RealBridge",
     "day": "Tue",
-    "time_uk": "14:00",
+    "time_uk": "19:30",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/harpenden/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-04",
+    "notes": "Verified from club site: Tue 7:30pm RealBridge"
   },
   {
-    "name": "Hitchin Bridge Club (Tue PM)",
+    "name": "Hitchin Bridge Club (Tue Evening)",
     "platform": "RealBridge",
     "day": "Tue",
-    "time_uk": "14:00",
+    "time_uk": "19:00",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/hitchin/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-04",
+    "notes": "Verified from club site: Tue 7pm RealBridge online (also has 1:15pm F2F — excluded)"
   },
   {
-    "name": "Keyworth Bridge Club (Tue PM)",
+    "name": "Keyworth Bridge Club (Tue Evening)",
     "platform": "RealBridge",
     "day": "Tue",
-    "time_uk": "14:00",
+    "time_uk": "19:00",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/keyworth/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-04",
+    "notes": "Verified from club site: Tue 7pm RealBridge (joint with Grantham)"
   },
   {
     "name": "Newbury Bridge Club (Tue Evening)",
@@ -719,7 +867,12 @@
     "results_url": "https://www.bridgewebs.com/newbury/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -733,7 +886,12 @@
     "results_url": "https://www.bridgewebs.com/northampton/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -747,7 +905,12 @@
     "results_url": "https://www.bridgewebs.com/retford/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -761,7 +924,12 @@
     "results_url": "https://www.bridgewebs.com/settle/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -775,7 +943,12 @@
     "results_url": "https://www.bridgewebs.com/welwyngardencity/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -789,7 +962,12 @@
     "results_url": "https://www.bridgewebs.com/afternoon/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; plays RealBridge 1:30pm Wednesdays (confirmed from site)"
@@ -803,7 +981,12 @@
     "results_url": "https://www.bridgewebs.com/oakingham/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -817,7 +1000,12 @@
     "results_url": "https://www.bridgewebs.com/bury/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder; Bury St Edmunds used as primary slug"
@@ -831,7 +1019,12 @@
     "results_url": "https://www.bridgewebs.com/bewdley/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -845,7 +1038,12 @@
     "results_url": "https://www.bridgewebs.com/castlecary/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder; Castle Cary used as primary slug"
@@ -859,7 +1057,12 @@
     "results_url": "https://www.bridgewebs.com/chippenham/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -873,7 +1076,12 @@
     "results_url": "https://www.bridgewebs.com/christchurch/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -887,7 +1095,12 @@
     "results_url": "https://www.bridgewebs.com/farnham/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -901,7 +1114,12 @@
     "results_url": "https://www.bridgewebs.com/louth/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -915,7 +1133,12 @@
     "results_url": "https://www.bridgewebs.com/maidstone/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -929,7 +1152,12 @@
     "results_url": "https://www.bridgewebs.com/miltonkeynes/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -943,7 +1171,12 @@
     "results_url": "https://www.bridgewebs.com/pershore/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -957,7 +1190,12 @@
     "results_url": "https://www.bridgewebs.com/trurocornwall/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -971,7 +1209,12 @@
     "results_url": "https://www.bridgewebs.com/warminster/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -985,7 +1228,12 @@
     "results_url": "https://www.bridgewebs.com/wallingford/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -999,7 +1247,12 @@
     "results_url": "https://www.bridgewebs.com/welwyngardencity/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -1013,7 +1266,12 @@
     "results_url": "https://www.bridgewebs.com/beckenham/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -1027,7 +1285,12 @@
     "results_url": "https://www.bridgewebs.com/grantham/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -1041,7 +1304,12 @@
     "results_url": "https://www.bridgewebs.com/hadleywood/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -1055,7 +1323,12 @@
     "results_url": "https://www.bridgewebs.com/larkhill/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -1069,7 +1342,12 @@
     "results_url": "https://www.bridgewebs.com/welwyngardencity/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -1083,7 +1361,12 @@
     "results_url": "https://www.bridgewebs.com/allendale/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder; Allendale used as primary slug"
@@ -1097,7 +1380,12 @@
     "results_url": "https://www.bridgewebs.com/banbury/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -1111,7 +1399,12 @@
     "results_url": "https://www.bridgewebs.com/blewbury/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -1125,7 +1418,12 @@
     "results_url": "https://www.bridgewebs.com/bewdley/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -1139,7 +1437,12 @@
     "results_url": "https://www.bridgewebs.com/bridport/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -1153,7 +1456,12 @@
     "results_url": "https://www.bridgewebs.com/fiveaces/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -1167,7 +1475,12 @@
     "results_url": "https://www.bridgewebs.com/finchampstead/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -1181,7 +1494,12 @@
     "results_url": "https://www.bridgewebs.com/folkestone/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -1195,7 +1513,12 @@
     "results_url": "https://www.bridgewebs.com/loddonvale/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -1209,7 +1532,12 @@
     "results_url": "https://www.bridgewebs.com/westwight/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder; West Wight BC used as primary slug"
@@ -1223,7 +1551,12 @@
     "results_url": "https://www.bridgewebs.com/noverre/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -1237,7 +1570,12 @@
     "results_url": "https://www.bridgewebs.com/oakfield/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -1251,7 +1589,12 @@
     "results_url": "https://www.bridgewebs.com/olicana/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -1265,7 +1608,12 @@
     "results_url": "https://www.bridgewebs.com/summertown/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder; Summertown BC (Oxford) used as best available slug"
@@ -1279,7 +1627,12 @@
     "results_url": "https://www.bridgewebs.com/pinner/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -1293,7 +1646,12 @@
     "results_url": "https://www.bridgewebs.com/chelmsford/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -1307,7 +1665,12 @@
     "results_url": "https://www.bridgewebs.com/exeter/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -1321,7 +1684,12 @@
     "results_url": "https://www.bridgewebs.com/friendlyfriday/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder; distinct from Friendly Online BC (BBO)"
@@ -1335,7 +1703,12 @@
     "results_url": "https://www.bridgewebs.com/keyworth/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -1349,7 +1722,12 @@
     "results_url": "https://www.bridgewebs.com/larkhill/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -1363,7 +1741,12 @@
     "results_url": "https://www.bridgewebs.com/oakingham/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -1377,7 +1760,12 @@
     "results_url": "https://www.bridgewebs.com/basingstoke/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder; Basingstoke used as primary slug"
@@ -1391,7 +1779,12 @@
     "results_url": "https://www.bridgewebs.com/eastsussex/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU PM listing; time placeholder"
@@ -1405,7 +1798,12 @@
     "results_url": "https://www.bridgewebs.com/fulbourn/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder; Fulbourn used as primary slug"
@@ -1419,7 +1817,12 @@
     "results_url": "https://www.bridgewebs.com/gravesend/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -1433,7 +1836,12 @@
     "results_url": "https://www.bridgewebs.com/hadleywood/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder; winter-time only (*)"
@@ -1447,7 +1855,12 @@
     "results_url": "https://www.bridgewebs.com/warrington/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -1461,7 +1874,12 @@
     "results_url": "https://www.bridgewebs.com/pershore/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
@@ -1475,7 +1893,12 @@
     "results_url": "https://www.bridgewebs.com/stretford/",
     "parser": "bridgewebs",
     "visitor_policy": "unknown",
-    "registration": {"required": false, "url": "", "deadline": "", "notes": ""},
+    "registration": {
+      "required": false,
+      "url": "",
+      "deadline": "",
+      "notes": ""
+    },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"

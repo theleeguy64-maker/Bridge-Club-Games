@@ -21,6 +21,8 @@ from bs4 import BeautifulSoup
 from rich.console import Console
 from rich.table import Table
 
+import bridge_db
+
 PROJECT_DIR = Path(__file__).resolve().parent.parent
 CLUBS_FILE = PROJECT_DIR / "clubs.json"
 REPORTS_DIR = PROJECT_DIR / "reports"
@@ -266,7 +268,7 @@ def candidate_dates_for_weekday(target_date, n=LOOKBACK_WEEKS):
     return [start - timedelta(weeks=i) for i in range(n)]
 
 
-def fetch_bridgewebs(club, target_date, time_uk):
+def fetch_bridgewebs(club, target_date, time_uk, db_conn=None):
     """Fetch results for a bridgewebs club.
 
     Strategy: Bridgewebs display_past only returns the last 3 sessions, so we
@@ -298,6 +300,8 @@ def fetch_bridgewebs(club, target_date, time_uk):
                 page = fetch(result_url(slug, eid))
                 pc, ngs = parse_result_page(page)
                 if pc is not None:
+                    if db_conn is not None:
+                        bridge_db.record_session(db_conn, slug, d.isoformat(), eid, pc, ngs)
                     return eid, pc, ngs
             except Exception:
                 pass
@@ -422,6 +426,20 @@ def main():
     if target.weekday() == 5:
         console.print("[yellow]Note: Saturday options are limited — Sunday has more variety.[/yellow]\n")
 
+    # Open DB and register clubs
+    db_conn = bridge_db.connect()
+    bridge_db.init_db(db_conn)
+    for club, _ in rows:
+        if club["parser"] != "bridgewebs":
+            continue
+        slug = slug_from_url(club["results_url"])
+        if slug:
+            bridge_db.upsert_club(
+                db_conn, slug, club["name"], club["day"], club["time_uk"],
+                club["results_url"], club["platform"],
+            )
+    db_conn.commit()
+
     # Fetch per unique club (not per row — multi-time entries share data)
     fetched = {}
     footnotes = []
@@ -433,7 +451,8 @@ def main():
             fetched[club["name"]] = fetch_static(club)
             console.print("[dim]static[/dim]")
         else:
-            data = fetch_bridgewebs(club, target, club["time_uk"])
+            data = fetch_bridgewebs(club, target, club["time_uk"], db_conn=db_conn)
+            db_conn.commit()
             fetched[club["name"]] = data
             if data["error"]:
                 console.print(f"[red]— ({data['error']})[/red]")
