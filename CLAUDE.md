@@ -26,9 +26,12 @@ Separate from the **Bridge Tournaments** project (`~/Casual_claude/Bridge_Tourna
 | File | Purpose |
 |------|---------|
 | `scripts/bridge_finder.py` | The whole script — date prompt, fetch, render, write |
+| `scripts/bridge_db.py` | SQLite store: schema, session upserts, classifier (pairs ≥ 14, NGS > 52% → `include`) |
+| `scripts/bridge_query.py` | Query DB for qualifying clubs: `python3 scripts/bridge_query.py Tue [all]` |
 | `scripts/launcher_template.sh` | Backup of the Desktop `.command` launcher |
-| `clubs.json` | Canonical list of ~103 UK weekday + weekend bridge clubs |
+| `clubs.json` | Canonical list of UK weekday + weekend bridge clubs (100 entries) |
 | `reports/` | Generated markdown reports per date (gitignored) |
+| `data/bridge_results.db` | SQLite — accumulates per-session pairs+NGS history (gitignored) |
 | `docs/superpowers/specs/2026-04-30-bridge-finder-design.md` | The design spec |
 | `docs/superpowers/plans/2026-04-30-bridge-finder.md` | The implementation plan (7 tasks) |
 
