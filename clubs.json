@@ -1258,105 +1258,10 @@
     "notes": "EBU evening listing; time placeholder"
   },
   {
-    "name": "Beckenham Bridge Club (Thu PM)",
+    "name": "Allendale & Retford Bridge Club (Thu Evening)",
     "platform": "RealBridge",
     "day": "Thu",
-    "time_uk": "14:00",
-    "cost": "",
-    "results_url": "https://www.bridgewebs.com/beckenham/",
-    "parser": "bridgewebs",
-    "visitor_policy": "unknown",
-    "registration": {
-      "required": false,
-      "url": "",
-      "deadline": "",
-      "notes": ""
-    },
-    "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
-  },
-  {
-    "name": "Grantham Bridge Club (Thu PM)",
-    "platform": "RealBridge",
-    "day": "Thu",
-    "time_uk": "14:00",
-    "cost": "",
-    "results_url": "https://www.bridgewebs.com/grantham/",
-    "parser": "bridgewebs",
-    "visitor_policy": "unknown",
-    "registration": {
-      "required": false,
-      "url": "",
-      "deadline": "",
-      "notes": ""
-    },
-    "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
-  },
-  {
-    "name": "Hadley Wood Bridge Club (Thu PM)",
-    "platform": "RealBridge",
-    "day": "Thu",
-    "time_uk": "14:00",
-    "cost": "",
-    "results_url": "https://www.bridgewebs.com/hadleywood/",
-    "parser": "bridgewebs",
-    "visitor_policy": "unknown",
-    "registration": {
-      "required": false,
-      "url": "",
-      "deadline": "",
-      "notes": ""
-    },
-    "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
-  },
-  {
-    "name": "Larkhill Bridge Club (Thu PM)",
-    "platform": "RealBridge",
-    "day": "Thu",
-    "time_uk": "14:00",
-    "cost": "",
-    "results_url": "https://www.bridgewebs.com/larkhill/",
-    "parser": "bridgewebs",
-    "visitor_policy": "unknown",
-    "registration": {
-      "required": false,
-      "url": "",
-      "deadline": "",
-      "notes": ""
-    },
-    "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
-  },
-  {
-    "name": "Welwyn Garden City Bridge Club (Thu PM)",
-    "platform": "RealBridge",
-    "day": "Thu",
-    "time_uk": "14:00",
-    "cost": "",
-    "results_url": "https://www.bridgewebs.com/welwyngardencity/",
-    "parser": "bridgewebs",
-    "visitor_policy": "unknown",
-    "registration": {
-      "required": false,
-      "url": "",
-      "deadline": "",
-      "notes": ""
-    },
-    "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
-  },
-  {
-    "name": "Allendale & Retford Bridge Club (Thu PM)",
-    "platform": "RealBridge",
-    "day": "Thu",
-    "time_uk": "14:00",
+    "time_uk": "19:15",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/allendale/",
     "parser": "bridgewebs",
@@ -1368,14 +1273,14 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder; Allendale used as primary slug"
+    "last_verified": "2026-05-07",
+    "notes": "Verified from club site 2026-05-07: Thu 19:15 RealBridge; Allendale slug used as primary"
   },
   {
-    "name": "Banbury Online Bridge Club (Thu PM)",
+    "name": "Banbury Online Bridge Club (Thu Evening)",
     "platform": "RealBridge",
     "day": "Thu",
-    "time_uk": "14:00",
+    "time_uk": "19:00",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/banbury/",
     "parser": "bridgewebs",
@@ -1387,14 +1292,14 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-07",
+    "notes": "Verified from club site 2026-05-07: Thu 19:00"
   },
   {
-    "name": "Blewbury & Wantage Bridge Club (Thu PM)",
+    "name": "Blewbury & Wantage Bridge Club (Thu Evening)",
     "platform": "RealBridge",
     "day": "Thu",
-    "time_uk": "14:00",
+    "time_uk": "19:00",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/blewbury/",
     "parser": "bridgewebs",
@@ -1406,14 +1311,14 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-07",
+    "notes": "Verified from club site 2026-05-07: Thu 19:00"
   },
   {
-    "name": "Bewdley Bridge Club (Thu PM)",
+    "name": "Bewdley Bridge Club (Thu Evening)",
     "platform": "RealBridge",
     "day": "Thu",
-    "time_uk": "14:00",
+    "time_uk": "19:00",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/bewdley/",
     "parser": "bridgewebs",
@@ -1425,14 +1330,14 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-07",
+    "notes": "Verified from club site 2026-05-07: Thu 19:00 online"
   },
   {
-    "name": "Bridport Bridge Club (Thu PM)",
+    "name": "Bridport Bridge Club (Thu Evening)",
     "platform": "RealBridge",
     "day": "Thu",
-    "time_uk": "14:00",
+    "time_uk": "18:35",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/bridport/",
     "parser": "bridgewebs",
@@ -1444,8 +1349,8 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-07",
+    "notes": "Verified from club site 2026-05-07: Thu 18:35"
   },
   {
     "name": "Five Aces Bridge Club (Thu Evening)",
