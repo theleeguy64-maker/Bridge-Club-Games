@@ -152,52 +152,14 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
-  },
-  {
-    "name": "Bewdley Bridge Club (Mon PM)",
-    "platform": "RealBridge",
-    "day": "Mon",
-    "time_uk": "14:00",
-    "cost": "",
-    "results_url": "https://www.bridgewebs.com/bewdley/",
-    "parser": "bridgewebs",
-    "visitor_policy": "unknown",
-    "registration": {
-      "required": false,
-      "url": "",
-      "deadline": "",
-      "notes": ""
-    },
-    "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
-  },
-  {
-    "name": "Hadley Wood Bridge Club (Mon PM)",
-    "platform": "RealBridge",
-    "day": "Mon",
-    "time_uk": "14:00",
-    "cost": "",
-    "results_url": "https://www.bridgewebs.com/hadleywood/",
-    "parser": "bridgewebs",
-    "visitor_policy": "unknown",
-    "registration": {
-      "required": false,
-      "url": "",
-      "deadline": "",
-      "notes": ""
-    },
-    "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-17",
+    "notes": "RealBridge Mon 14:00, verified"
   },
   {
     "name": "Keyworth Bridge Club (Mon PM)",
     "platform": "RealBridge",
     "day": "Mon",
-    "time_uk": "14:00",
+    "time_uk": "13:00",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/keyworth/",
     "parser": "bridgewebs",
@@ -209,8 +171,8 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-17",
+    "notes": "RealBridge Mon 13:00 (also Wed F2F 13:00, Tue eve combined w/ Grantham)"
   },
   {
     "name": "Milton Keynes Bridge Club (Mon PM)",
@@ -228,14 +190,14 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-17",
+    "notes": "RealBridge Mon 14:00, verified"
   },
   {
-    "name": "Truro Bridge Club (Mon PM)",
+    "name": "Truro Bridge Club (Mon late PM)",
     "platform": "RealBridge",
     "day": "Mon",
-    "time_uk": "14:00",
+    "time_uk": "16:00",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/trurocornwall/",
     "parser": "bridgewebs",
@@ -247,14 +209,14 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-17",
+    "notes": "RealBridge 'No Fear' Mon 16:00, £1.50/session"
   },
   {
-    "name": "Abbeygate Bridge Club (Mon PM)",
+    "name": "Abbeygate Bridge Club (Mon Eve)",
     "platform": "RealBridge",
     "day": "Mon",
-    "time_uk": "14:00",
+    "time_uk": "19:00",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/abbeygate/",
     "parser": "bridgewebs",
@@ -266,14 +228,14 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-17",
+    "notes": "RealBridge Mon 19:00 (members only £2.50)"
   },
   {
-    "name": "Balsham Bridge Club (Mon PM)",
+    "name": "Balsham Bridge Club (Mon Eve)",
     "platform": "RealBridge",
     "day": "Mon",
-    "time_uk": "14:00",
+    "time_uk": "19:00",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/balsham/",
     "parser": "bridgewebs",
@@ -285,33 +247,14 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-17",
+    "notes": "RealBridge Mon 19:00, £1 visitor"
   },
   {
-    "name": "Basingstoke Bridge Club (Mon PM)",
+    "name": "Bracknell Forest Bridge Club (Mon Eve)",
     "platform": "RealBridge",
     "day": "Mon",
-    "time_uk": "14:00",
-    "cost": "",
-    "results_url": "https://www.bridgewebs.com/basingstoke/",
-    "parser": "bridgewebs",
-    "visitor_policy": "unknown",
-    "registration": {
-      "required": false,
-      "url": "",
-      "deadline": "",
-      "notes": ""
-    },
-    "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
-  },
-  {
-    "name": "Bracknell Forest Bridge Club (Mon PM)",
-    "platform": "RealBridge",
-    "day": "Mon",
-    "time_uk": "14:00",
+    "time_uk": "19:20",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/bracknellforest/",
     "parser": "bridgewebs",
@@ -323,14 +266,14 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-17",
+    "notes": "RealBridge Mon 19:20, £2 visitor"
   },
   {
-    "name": "Chelmsford Bridge Club (Mon PM)",
+    "name": "Chelmsford Bridge Club (Mon Eve)",
     "platform": "RealBridge",
     "day": "Mon",
-    "time_uk": "14:00",
+    "time_uk": "19:00",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/chelmsford/",
     "parser": "bridgewebs",
@@ -342,14 +285,14 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-17",
+    "notes": "RealBridge Open Pairs Mon 19:00, £2 (members £2 club fee)"
   },
   {
-    "name": "Christchurch Bridge Club (Mon PM)",
+    "name": "Christchurch Bridge Club (Mon Eve)",
     "platform": "RealBridge",
     "day": "Mon",
-    "time_uk": "14:00",
+    "time_uk": "19:15",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/christchurch/",
     "parser": "bridgewebs",
@@ -361,8 +304,8 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-17",
+    "notes": "RealBridge Mon 19:15, £2/session"
   },
   {
     "name": "Cross in Hand Bridge Club (Mon Evening)",
