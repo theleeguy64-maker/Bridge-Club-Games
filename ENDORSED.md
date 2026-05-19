@@ -11,4 +11,6 @@ To add: tell Claude "endorse <club>" with a one-line note. To remove: "unendorse
 | Thu | 19:00 | Noverre | RealBridge | 2026-05-19 | Endorsed by Lee. |
 | Fri | 15:00 | Exeter | RealBridge | 2026-05-19 | Endorsed by Lee. |
 | Fri | 19:30 | Milton Keynes | RealBridge | 2026-05-19 | Endorsed by Lee. |
+| Mon | 19:00 | Chelmsford | RealBridge | 2026-05-19 | Endorsed by Lee. |
+| Tue | 19:00 | Chelmsford | RealBridge | 2026-05-19 | Endorsed by Lee. |
 | Sun | 19:00 | EBU Super Sunday Special | RealBridge | 2026-05-19 | Endorsed by Lee. |
