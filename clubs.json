@@ -1090,7 +1090,7 @@
     "name": "Milton Keynes Bridge Club (Wed Evening)",
     "platform": "RealBridge",
     "day": "Wed",
-    "time_uk": "19:00",
+    "time_uk": "19:30",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/miltonkeynes/",
     "parser": "bridgewebs",
@@ -1102,8 +1102,8 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "last_verified": "2026-05-19",
+    "notes": "RealBridge Wed 19:30, verified"
   },
   {
     "name": "Pershore Bridge Club (Wed Evening)",
@@ -1508,7 +1508,7 @@
     "name": "Exeter Bridge Club (Fri PM)",
     "platform": "RealBridge",
     "day": "Fri",
-    "time_uk": "14:00",
+    "time_uk": "15:00",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/exeter/",
     "parser": "bridgewebs",
@@ -1520,8 +1520,8 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-19",
+    "notes": "RealBridge Fri 15:00, verified"
   },
   {
     "name": "Friendly Friday Bridge Club (Fri PM)",
@@ -1600,10 +1600,10 @@
     "notes": "EBU PM listing; time placeholder"
   },
   {
-    "name": "Basingstoke/Milton Keynes Bridge Club (Fri PM)",
+    "name": "Basingstoke Bridge Club (Fri Evening)",
     "platform": "RealBridge",
     "day": "Fri",
-    "time_uk": "14:00",
+    "time_uk": "19:00",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/basingstoke/",
     "parser": "bridgewebs",
@@ -1616,7 +1616,7 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder; Basingstoke used as primary slug"
+    "notes": "RealBridge Fri evening, time not pinned on bridgewebs home page; placeholder 19:00"
   },
   {
     "name": "East Sussex Bridge Club (Fri PM)",
@@ -1750,5 +1750,24 @@
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
     "notes": "EBU evening listing; time placeholder"
+  },
+  {
+    "name": "Milton Keynes Bridge Club (Fri Evening)",
+    "platform": "RealBridge",
+    "day": "Fri",
+    "time_uk": "19:30",
+    "cost": "£2 (members & visitors)",
+    "results_url": "https://www.bridgewebs.com/miltonkeynes/",
+    "parser": "bridgewebs",
+    "visitor_policy": "unknown",
+    "registration": {
+      "required": true,
+      "url": "https://www.bridgewebs.com/miltonkeynes/",
+      "deadline": "First-time players register via RealBridge link",
+      "notes": "Table money £2 billed monthly in arrears"
+    },
+    "how_to_enter_summary": "Register via RealBridge link on bridgewebs page; logon 7pm for 7:30pm start",
+    "last_verified": "2026-05-19",
+    "notes": "RealBridge Fri 19:30, verified"
   }
 ]

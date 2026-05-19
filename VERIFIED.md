@@ -1,6 +1,6 @@
 # Verified Bridge Clubs
 
-Auto-generated from `clubs.json`. 37 of 92 clubs have day/time verified against bridgewebs (no placeholder notes).
+Auto-generated from `clubs.json`. 40 of 93 clubs have day/time verified against bridgewebs (no placeholder notes).
 
 Regenerate: `python3 scripts/generate_verified.py`
 
@@ -37,11 +37,12 @@ Regenerate: `python3 scripts/generate_verified.py`
 | 19:30 | Hadley Wood Bridge Club (Tue Evening) | RealBridge |  | 2026-05-04 |
 | 19:30 | Harpenden Bridge Club (Tue Evening) | RealBridge |  | 2026-05-04 |
 
-## Wed (1)
+## Wed (2)
 
 | Time | Club | Platform | Cost | Last verified |
 |------|------|----------|------|---------------|
 | 13:30 | Afternoon Bridge Club (Wed PM) | RealBridge |  | 2026-04-30 |
+| 19:30 | Milton Keynes Bridge Club (Wed Evening) | RealBridge |  | 2026-05-19 |
 
 ## Thu (6)
 
@@ -53,6 +54,13 @@ Regenerate: `python3 scripts/generate_verified.py`
 | 19:00 | Blewbury & Wantage Bridge Club (Thu Evening) | RealBridge |  | 2026-05-07 |
 | 19:00 | Noverre Bridge Club (Thu Evening) | RealBridge |  | 2026-05-19 |
 | 19:15 | Allendale & Retford Bridge Club (Thu Evening) | RealBridge |  | 2026-05-07 |
+
+## Fri (2)
+
+| Time | Club | Platform | Cost | Last verified |
+|------|------|----------|------|---------------|
+| 15:00 | Exeter Bridge Club (Fri PM) | RealBridge |  | 2026-05-19 |
+| 19:30 | Milton Keynes Bridge Club (Fri Evening) | RealBridge | £2 (members & visitors) | 2026-05-19 |
 
 ## Sat (3)
 
