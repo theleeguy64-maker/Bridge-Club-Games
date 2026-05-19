@@ -665,8 +665,8 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-05-04",
-    "notes": "Verified from club site: Tue 7pm RealBridge"
+    "last_verified": "2026-05-19",
+    "notes": "RealBridge Tue 19:00, verified (login by 6:50pm)"
   },
   {
     "name": "Droitwich Bridge Club (Tue Evening)",
@@ -1489,7 +1489,7 @@
     "name": "Chelmsford Bridge Club (Fri PM)",
     "platform": "RealBridge",
     "day": "Fri",
-    "time_uk": "14:00",
+    "time_uk": "13:30",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/chelmsford/",
     "parser": "bridgewebs",
@@ -1501,8 +1501,8 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-05-19",
+    "notes": "RealBridge Fri 13:30, verified (login by 1:20pm)"
   },
   {
     "name": "Exeter Bridge Club (Fri PM)",
