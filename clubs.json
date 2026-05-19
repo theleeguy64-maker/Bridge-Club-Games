@@ -1769,5 +1769,24 @@
     "how_to_enter_summary": "Register via RealBridge link on bridgewebs page; logon 7pm for 7:30pm start",
     "last_verified": "2026-05-19",
     "notes": "RealBridge Fri 19:30, verified"
+  },
+  {
+    "name": "Exeter Bridge Club (Mon Evening)",
+    "platform": "BBO",
+    "day": "Mon",
+    "time_uk": "19:15",
+    "cost": "£2.50 online",
+    "results_url": "https://www.bridgewebs.com/exeter/",
+    "parser": "bridgewebs",
+    "visitor_policy": "unknown",
+    "registration": {
+      "required": true,
+      "url": "https://www.bridgewebs.com/cgi-bin/bwor/bw.cgi?club=exeter&pid=display_page16",
+      "deadline": "Before session",
+      "notes": "BBO Pairs Registration page on bridgewebs"
+    },
+    "how_to_enter_summary": "Register via BBO Pairs page on bridgewebs; £2.50 online",
+    "last_verified": "2026-05-19",
+    "notes": "BBO Duplicate Pairs Mon 19:15, verified"
   }
 ]

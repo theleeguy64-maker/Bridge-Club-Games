@@ -1,10 +1,10 @@
 # Verified Bridge Clubs
 
-Auto-generated from `clubs.json`. 41 of 93 clubs have day/time verified against bridgewebs (no placeholder notes).
+Auto-generated from `clubs.json`. 42 of 94 clubs have day/time verified against bridgewebs (no placeholder notes).
 
 Regenerate: `python3 scripts/generate_verified.py`
 
-## Mon (10)
+## Mon (11)
 
 | Time | Club | Platform | Cost | Last verified |
 |------|------|----------|------|---------------|
@@ -17,6 +17,7 @@ Regenerate: `python3 scripts/generate_verified.py`
 | 19:00 | Chelmsford Bridge Club (Mon Eve) | RealBridge |  | 2026-05-17 |
 | 19:00 | Hellesdon & Taverham Bridge Club (Mon Evening) | RealBridge |  | 2026-05-19 |
 | 19:15 | Christchurch Bridge Club (Mon Eve) | RealBridge |  | 2026-05-17 |
+| 19:15 | Exeter Bridge Club (Mon Evening) | BBO | £2.50 online | 2026-05-19 |
 | 19:20 | Bracknell Forest Bridge Club (Mon Eve) | RealBridge |  | 2026-05-17 |
 
 ## Tue (13)
