@@ -1,10 +1,10 @@
 # Verified Bridge Clubs
 
-Auto-generated from `clubs.json`. 35 of 92 clubs have day/time verified against bridgewebs (no placeholder notes).
+Auto-generated from `clubs.json`. 37 of 92 clubs have day/time verified against bridgewebs (no placeholder notes).
 
 Regenerate: `python3 scripts/generate_verified.py`
 
-## Mon (9)
+## Mon (10)
 
 | Time | Club | Platform | Cost | Last verified |
 |------|------|----------|------|---------------|
@@ -15,6 +15,7 @@ Regenerate: `python3 scripts/generate_verified.py`
 | 19:00 | Abbeygate Bridge Club (Mon Eve) | RealBridge |  | 2026-05-17 |
 | 19:00 | Balsham Bridge Club (Mon Eve) | RealBridge |  | 2026-05-17 |
 | 19:00 | Chelmsford Bridge Club (Mon Eve) | RealBridge |  | 2026-05-17 |
+| 19:00 | Hellesdon & Taverham Bridge Club (Mon Evening) | RealBridge |  | 2026-05-19 |
 | 19:15 | Christchurch Bridge Club (Mon Eve) | RealBridge |  | 2026-05-17 |
 | 19:20 | Bracknell Forest Bridge Club (Mon Eve) | RealBridge |  | 2026-05-17 |
 
@@ -42,7 +43,7 @@ Regenerate: `python3 scripts/generate_verified.py`
 |------|------|----------|------|---------------|
 | 13:30 | Afternoon Bridge Club (Wed PM) | RealBridge |  | 2026-04-30 |
 
-## Thu (5)
+## Thu (6)
 
 | Time | Club | Platform | Cost | Last verified |
 |------|------|----------|------|---------------|
@@ -50,6 +51,7 @@ Regenerate: `python3 scripts/generate_verified.py`
 | 19:00 | Banbury Online Bridge Club (Thu Evening) | RealBridge |  | 2026-05-07 |
 | 19:00 | Bewdley Bridge Club (Thu Evening) | RealBridge |  | 2026-05-07 |
 | 19:00 | Blewbury & Wantage Bridge Club (Thu Evening) | RealBridge |  | 2026-05-07 |
+| 19:00 | Noverre Bridge Club (Thu Evening) | RealBridge |  | 2026-05-19 |
 | 19:15 | Allendale & Retford Bridge Club (Thu Evening) | RealBridge |  | 2026-05-07 |
 
 ## Sat (3)
