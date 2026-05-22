@@ -256,35 +256,36 @@ def render_html(rows, endorsed_count, build_version):
 <meta name="theme-color" content="#0e1217">
 <meta name="build-version" content="{build_version}">
 <script>
-  // Version-check: defeats iOS aggressive SW caching (Pages can't send no-cache on sw.js)
+  // Auto-update flow:
+  //   1. On page load, register/update SW. Forces SW update check past the 10-min
+  //      max-age cache that GitHub Pages serves for sw.js.
+  //   2. If a new SW is found, it installs + skipWaiting + claims clients + posts
+  //      SW_UPDATED. The page listens via 'controllerchange' AND the message —
+  //      either way, reload once.
+  //   3. The reload-once guard (sessionStorage) prevents infinite loops.
   (function() {{
+    if (!('serviceWorker' in navigator)) return;
     var BUILD = "{build_version}";
-    var stored = localStorage.getItem('bcg_build');
-    if (stored && stored !== BUILD && !sessionStorage.getItem('bcg_reloaded')) {{
-      // New build detected — wipe caches + unregister SW, then hard-reload past the stale SW
-      sessionStorage.setItem('bcg_reloaded', '1');
-      localStorage.setItem('bcg_build', BUILD);
-      if ('caches' in window) {{
-        caches.keys().then(function(keys) {{
-          return Promise.all(keys.map(function(k) {{ return caches.delete(k); }}));
-        }}).then(function() {{
-          if ('serviceWorker' in navigator) {{
-            return navigator.serviceWorker.getRegistrations().then(function(regs) {{
-              return Promise.all(regs.map(function(r) {{ return r.unregister(); }}));
-            }});
-          }}
-        }}).then(function() {{
-          location.reload();
-        }});
-        return;
-      }}
+    var reloadOnce = function(reason) {{
+      if (sessionStorage.getItem('bcg_reloaded_for') === BUILD) return;
+      sessionStorage.setItem('bcg_reloaded_for', BUILD);
+      console.log('[bcg] reload:', reason);
       location.reload();
-    }}
-    sessionStorage.removeItem('bcg_reloaded');
-    localStorage.setItem('bcg_build', BUILD);
-    if ('serviceWorker' in navigator) {{
-      window.addEventListener('load', function() {{ navigator.serviceWorker.register('sw.js'); }});
-    }}
+    }};
+    navigator.serviceWorker.addEventListener('controllerchange', function() {{
+      reloadOnce('controllerchange');
+    }});
+    navigator.serviceWorker.addEventListener('message', function(e) {{
+      if (e.data && e.data.type === 'SW_UPDATED' && e.data.version !== BUILD) {{
+        reloadOnce('SW_UPDATED ' + e.data.version);
+      }}
+    }});
+    window.addEventListener('load', function() {{
+      navigator.serviceWorker.register('sw.js').then(function(reg) {{
+        // Force an update check on every page open — bypasses sw.js HTTP cache.
+        reg.update().catch(function(){{}});
+      }});
+    }});
   }})();
 </script>
 <style>
