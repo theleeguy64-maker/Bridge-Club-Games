@@ -22,6 +22,8 @@ def connect():
     DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
     conn.execute("PRAGMA foreign_keys = ON")
+    conn.execute("PRAGMA journal_mode = WAL")
+    conn.execute("PRAGMA busy_timeout = 5000")
     return conn
 
 
@@ -96,6 +98,24 @@ def latest_per_club(conn, day=None):
     cur = conn.execute(sql, params)
     cols = [d[0] for d in cur.description]
     return [dict(zip(cols, row)) for row in cur.fetchall()]
+
+
+def rolling_4w(conn, slug, weekday):
+    """Return list of (session_date, pairs, ngs) for the last 28 days,
+    filtered by SQLite weekday (TEXT, Sun=0..Sat=6).
+
+    weekday MUST be a string ('0'..'6') — strftime('%w', ...) returns TEXT
+    and binding an int returns zero rows silently.
+    """
+    cur = conn.execute("""
+        SELECT session_date, pairs, ngs
+        FROM sessions
+        WHERE club_slug = ?
+          AND strftime('%w', session_date) = ?
+          AND session_date >= date('now', '-28 days')
+        ORDER BY session_date DESC
+    """, (slug, weekday))
+    return cur.fetchall()
 
 
 def classify(pairs, ngs):
