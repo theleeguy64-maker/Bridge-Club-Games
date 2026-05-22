@@ -249,6 +249,16 @@ def render_html(rows, endorsed_count):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>RealBridge Bridge Club Games</title>
+<link rel="manifest" href="manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Bridge">
+<meta name="theme-color" content="#0e1217">
+<script>
+  if ('serviceWorker' in navigator) {{
+    window.addEventListener('load', () => navigator.serviceWorker.register('sw.js'));
+  }}
+</script>
 <style>
   :root {{ color-scheme: dark; }}
   body {{
@@ -321,6 +331,22 @@ def main():
     rows.sort(key=lambda r: (DAY_DISPLAY_ORDER.get(r["Day"], 99), r["Time"]))
     html_out = render_html(rows, endorsed_count=len(endorsed))
     atomic_write(OUTPUT_PATH, html_out)
+
+    # Bump the service-worker version on every regen so iOS home-screen PWAs
+    # refresh on next open. The version is just the build timestamp.
+    sw_path = PROJECT_DIR / "docs" / "sw.js"
+    if sw_path.exists():
+        sw_text = sw_path.read_text(encoding="utf-8")
+        new_version = datetime.now().strftime("%Y%m%d-%H%M%S")
+        import re as _re
+        sw_text_new = _re.sub(
+            r"const VERSION = '[^']*';",
+            f"const VERSION = '{new_version}';",
+            sw_text,
+            count=1,
+        )
+        if sw_text_new != sw_text:
+            atomic_write(sw_path, sw_text_new)
 
     print(f"Wrote {OUTPUT_PATH.relative_to(PROJECT_DIR)} ({len(rows)} rows, {len(_warnings)} warnings)")
     sys.exit(EXIT_SOFT_FAIL if _warnings else EXIT_OK)
