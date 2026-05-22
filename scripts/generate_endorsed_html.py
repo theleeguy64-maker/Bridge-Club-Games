@@ -214,7 +214,7 @@ def render_html(rows, endorsed_count):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lee's endorsed UK online bridge clubs</title>
+<title>RealBridge Bridge Club Games</title>
 <style>
   :root {{ color-scheme: dark; }}
   body {{
@@ -241,7 +241,7 @@ def render_html(rows, endorsed_count):
 </style>
 </head>
 <body>
-<h1>Lee's endorsed UK online bridge clubs</h1>
+<h1>RealBridge Bridge Club Games</h1>
 <div class="ts">Generated {now} (UK time)</div>
 <table>
   <thead>
