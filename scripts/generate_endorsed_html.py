@@ -251,7 +251,10 @@ def render_html(rows, endorsed_count):
 {body_rows}
   </tbody>
 </table>
-<footer>Data as of {html.escape(data_as_of)} — newest session across all rows. Pairs/NGS from bridgewebs.com rolling 4-week window.</footer>
+<footer>
+Data as of {html.escape(data_as_of)} — newest session across all rows. Pairs/NGS from bridgewebs.com rolling 4-week window.<br>
+<span class="partial">(partial)</span> = fewer than 4 same-weekday sessions in the last 28 days, so the average is based on less data than usual.
+</footer>
 </body>
 </html>
 """
