@@ -248,7 +248,7 @@ def render_html(rows, endorsed_count, build_version):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>RealBridge Bridge Club Games</title>
+<title>RealBridge Bridge Club Games (ping 13:58)</title>
 <link rel="manifest" href="manifest.json">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -313,7 +313,7 @@ def render_html(rows, endorsed_count, build_version):
 </style>
 </head>
 <body>
-<h1>RealBridge Bridge Club Games</h1>
+<h1>RealBridge Bridge Club Games (ping 13:58)</h1>
 <div class="ts">Generated {now} (UK time)</div>
 <table>
   <thead>
