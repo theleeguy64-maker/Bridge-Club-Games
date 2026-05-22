@@ -1,6 +1,6 @@
 # Verified Bridge Clubs
 
-Auto-generated from `clubs.json`. 48 of 91 clubs have day/time verified against bridgewebs (no placeholder notes).
+Auto-generated from `clubs.json`. 49 of 92 clubs have day/time verified against bridgewebs (no placeholder notes).
 
 Regenerate: `python3 scripts/generate_verified.py`
 
@@ -44,10 +44,11 @@ Regenerate: `python3 scripts/generate_verified.py`
 | 13:30 | Afternoon Bridge Club (Wed PM) | RealBridge |  | 2026-04-30 |
 | 19:30 | Milton Keynes Bridge Club (Wed Evening) | RealBridge |  | 2026-05-19 |
 
-## Thu (13)
+## Thu (14)
 
 | Time | Club | Platform | Cost | Last verified |
 |------|------|----------|------|---------------|
+| 16:00 | Beckenham Bridge Club (Thu PM) | RealBridge |  | 2026-05-22 |
 | 18:15 | Oakfield Bridge Club (Thu Evening) | RealBridge |  | 2026-05-22 |
 | 18:35 | Bridport Bridge Club (Thu Evening) | RealBridge |  | 2026-05-07 |
 | 19:00 | Banbury Online Bridge Club (Thu Evening) | RealBridge |  | 2026-05-07 |

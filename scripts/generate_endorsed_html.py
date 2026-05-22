@@ -88,12 +88,17 @@ def validate_clubs_unique(clubs):
 
 
 def validate_clubs_json_keys(endorsed, clubs):
+    """A row may opt out of the clubs.json join by leaving clubs_json_key blank
+    AND supplying both pairs_override and ngs_override. Rows with a key must
+    match exactly one clubs.json entry."""
     by_name = {normalize(c["name"]): c for c in clubs}
     offenders = []
     for row in endorsed:
         key = normalize(row.get("clubs_json_key", ""))
         if not key:
-            offenders.append(f"{row.get('Club','?')} ({row.get('Day','?')}): empty clubs_json_key")
+            if normalize(row.get("pairs_override", "")) and normalize(row.get("ngs_override", "")):
+                continue  # override-only row, no clubs.json lookup needed
+            offenders.append(f"{row.get('Club','?')} ({row.get('Day','?')}): empty clubs_json_key (and no pairs_override + ngs_override)")
         elif key not in by_name:
             offenders.append(f"{row.get('Club','?')} ({row.get('Day','?')}): no clubs.json match for {key!r}")
     if offenders:
@@ -103,12 +108,16 @@ def validate_clubs_json_keys(endorsed, clubs):
 
 
 def required_fields_gate(endorsed):
-    required = ["Day", "Time", "Club", "Platform", "clubs_json_key"]
+    """clubs_json_key may be blank only if both overrides are provided."""
+    required = ["Day", "Time", "Club", "Platform"]
     offenders = []
     for row in endorsed:
         for f in required:
             if not normalize(row.get(f, "")):
                 offenders.append(f"{row.get('Club','?')}: missing {f}")
+        if not normalize(row.get("clubs_json_key", "")):
+            if not (normalize(row.get("pairs_override", "")) and normalize(row.get("ngs_override", ""))):
+                offenders.append(f"{row.get('Club','?')}: missing clubs_json_key and no overrides")
     if offenders:
         for o in offenders:
             print(f"FATAL: {o}", file=sys.stderr)
@@ -127,7 +136,21 @@ def build_rows(endorsed, clubs, conn):
     out = []
     today = date.today()
     for row in endorsed:
-        key = normalize(row["clubs_json_key"])
+        key = normalize(row.get("clubs_json_key", ""))
+        pairs_override = normalize(row.get("pairs_override", ""))
+        ngs_override = normalize(row.get("ngs_override", ""))
+
+        # Override-only row (no clubs.json join, no DB lookup, no warnings)
+        if not key and pairs_override and ngs_override:
+            out.append({
+                "Day": row["Day"], "Time": row["Time"], "Club": row["Club"],
+                "Platform": row["Platform"], "Note": row.get("Note", ""),
+                "url": "",
+                "pairs_mean": pairs_override, "ngs_mean": ngs_override,
+                "partial": False, "stale": False, "max_date": None,
+            })
+            continue
+
         club = by_name[key]
         url = club.get("results_url", "")
         if not url:
@@ -143,6 +166,11 @@ def build_rows(endorsed, clubs, conn):
 
         pairs_mean = mean_or_none(pairs_vals)
         ngs_mean = mean_or_none(ngs_vals)
+        # Per-cell override wins over computed value
+        if pairs_override:
+            pairs_mean = pairs_override
+        if ngs_override:
+            ngs_mean = ngs_override
         partial = 0 < len(non_null_pairs) < 4 or 0 < len(non_null_ngs) < 4
 
         max_date = max((s[0] for s in sessions), default=None)
@@ -154,7 +182,7 @@ def build_rows(endorsed, clubs, conn):
             except ValueError:
                 pass
 
-        if not sessions:
+        if not sessions and not (pairs_override and ngs_override):
             warn(f"{row['Club']} ({row['Day']}): no DB sessions in 4wk window")
 
         out.append({
@@ -176,6 +204,8 @@ def build_rows(endorsed, clubs, conn):
 def fmt_num(v, partial):
     if v is None:
         return "—"
+    if isinstance(v, str):  # literal override from ENDORSED.md
+        return html.escape(v)
     s = f"{v:.1f}"
     if partial:
         s += ' <span class="partial">(partial)</span>'
