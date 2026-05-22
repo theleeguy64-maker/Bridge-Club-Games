@@ -1,6 +1,6 @@
 # Verified Bridge Clubs
 
-Auto-generated from `clubs.json`. 41 of 93 clubs have day/time verified against bridgewebs (no placeholder notes).
+Auto-generated from `clubs.json`. 48 of 91 clubs have day/time verified against bridgewebs (no placeholder notes).
 
 Regenerate: `python3 scripts/generate_verified.py`
 
@@ -44,16 +44,23 @@ Regenerate: `python3 scripts/generate_verified.py`
 | 13:30 | Afternoon Bridge Club (Wed PM) | RealBridge |  | 2026-04-30 |
 | 19:30 | Milton Keynes Bridge Club (Wed Evening) | RealBridge |  | 2026-05-19 |
 
-## Thu (6)
+## Thu (13)
 
 | Time | Club | Platform | Cost | Last verified |
 |------|------|----------|------|---------------|
+| 18:15 | Oakfield Bridge Club (Thu Evening) | RealBridge |  | 2026-05-22 |
 | 18:35 | Bridport Bridge Club (Thu Evening) | RealBridge |  | 2026-05-07 |
 | 19:00 | Banbury Online Bridge Club (Thu Evening) | RealBridge |  | 2026-05-07 |
 | 19:00 | Bewdley Bridge Club (Thu Evening) | RealBridge |  | 2026-05-07 |
 | 19:00 | Blewbury & Wantage Bridge Club (Thu Evening) | RealBridge |  | 2026-05-07 |
+| 19:00 | Finchampstead Bridge Club (Thu Evening) | RealBridge |  | 2026-05-22 |
+| 19:00 | Five Aces Bridge Club (Thu Evening) | RealBridge |  | 2026-05-22 |
+| 19:00 | Lymington & West Wight Bridge Club (Thu Evening) | RealBridge |  | 2026-05-22 |
 | 19:00 | Noverre Bridge Club (Thu Evening) | RealBridge |  | 2026-05-19 |
 | 19:15 | Allendale & Retford Bridge Club (Thu Evening) | RealBridge |  | 2026-05-07 |
+| 19:15 | Olicana Bridge Club (Thu Evening) | RealBridge |  | 2026-05-22 |
+| 19:30 | Loddon Vale Bridge Club (Thu Evening) | RealBridge |  | 2026-05-22 |
+| 19:30 | Pinner Bridge Club (Thu Evening) | RealBridge |  | 2026-05-22 |
 
 ## Fri (3)
 

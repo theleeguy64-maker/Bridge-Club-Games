@@ -1311,8 +1311,8 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "last_verified": "2026-05-22",
+    "notes": "RealBridge Thu 19:00, verified"
   },
   {
     "name": "Finchampstead Bridge Club (Thu Evening)",
@@ -1330,33 +1330,14 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
-  },
-  {
-    "name": "Folkestone Bridge Club (Thu Evening)",
-    "platform": "RealBridge",
-    "day": "Thu",
-    "time_uk": "19:00",
-    "cost": "",
-    "results_url": "https://www.bridgewebs.com/folkestone/",
-    "parser": "bridgewebs",
-    "visitor_policy": "unknown",
-    "registration": {
-      "required": false,
-      "url": "",
-      "deadline": "",
-      "notes": ""
-    },
-    "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "last_verified": "2026-05-22",
+    "notes": "RealBridge Thu 19:00, verified"
   },
   {
     "name": "Loddon Vale Bridge Club (Thu Evening)",
     "platform": "RealBridge",
     "day": "Thu",
-    "time_uk": "19:00",
+    "time_uk": "19:30",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/loddonvale/",
     "parser": "bridgewebs",
@@ -1368,8 +1349,8 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "last_verified": "2026-05-22",
+    "notes": "RealBridge Thu 19:30, verified — logon 7:20 for 7:30 start"
   },
   {
     "name": "Lymington & West Wight Bridge Club (Thu Evening)",
@@ -1387,8 +1368,8 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder; West Wight BC used as primary slug"
+    "last_verified": "2026-05-22",
+    "notes": "RealBridge Thu 19:00, verified — West Solent BC, logon by 18:50"
   },
   {
     "name": "Noverre Bridge Club (Thu Evening)",
@@ -1413,7 +1394,7 @@
     "name": "Oakfield Bridge Club (Thu Evening)",
     "platform": "RealBridge",
     "day": "Thu",
-    "time_uk": "19:00",
+    "time_uk": "18:15",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/oakfield/",
     "parser": "bridgewebs",
@@ -1425,14 +1406,14 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "last_verified": "2026-05-22",
+    "notes": "RealBridge Thu 18:15, verified — early evening"
   },
   {
     "name": "Olicana Bridge Club (Thu Evening)",
     "platform": "RealBridge",
     "day": "Thu",
-    "time_uk": "19:00",
+    "time_uk": "19:15",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/olicana/",
     "parser": "bridgewebs",
@@ -1444,33 +1425,14 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
-  },
-  {
-    "name": "Oxford Bridge Club (Thu Evening)",
-    "platform": "RealBridge",
-    "day": "Thu",
-    "time_uk": "19:00",
-    "cost": "",
-    "results_url": "https://www.bridgewebs.com/summertown/",
-    "parser": "bridgewebs",
-    "visitor_policy": "unknown",
-    "registration": {
-      "required": false,
-      "url": "",
-      "deadline": "",
-      "notes": ""
-    },
-    "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder; Summertown BC (Oxford) used as best available slug"
+    "last_verified": "2026-05-22",
+    "notes": "RealBridge Thu 19:15, verified — Duplicate Pairs"
   },
   {
     "name": "Pinner Bridge Club (Thu Evening)",
     "platform": "RealBridge",
     "day": "Thu",
-    "time_uk": "19:00",
+    "time_uk": "19:30",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/pinner/",
     "parser": "bridgewebs",
@@ -1482,8 +1444,8 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "last_verified": "2026-05-22",
+    "notes": "RealBridge Thu 19:30, verified"
   },
   {
     "name": "Chelmsford Bridge Club (Fri PM)",
