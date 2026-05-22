@@ -1,7 +1,7 @@
 # Spec: Endorsed Shortlist — Distributable HTML Page
 
 **Date:** 2026-05-22
-**Status:** Draft (lee accept — product lens applied 2026-05-22)
+**Status:** Draft (lee accept — product + dev lenses applied 2026-05-22)
 
 ## Goal
 A single self-contained HTML file showing Lee's endorsed bridge clubs. Distributable — Lee emails / AirDrops / messages it to a friend, they double-click, it opens in any browser. No server, no install, no login.
@@ -25,7 +25,12 @@ The file is distributed to known friends, not posted publicly. The `Played` colu
 
 `ENDORSED.md` short names ("Ascot", "Chelmsford") do NOT match `clubs.json` suffixed names ("Ascot Bridge Club (Mon PM)") — naive name-equality fails 7/8 rows. To fix the join unambiguously:
 
-Add a **`clubs_json_key`** column to `ENDORSED.md`. Value is the exact `name` string from `clubs.json` for the intended entry. This is the load-bearing join key — generator looks up `clubs.json` by `name == clubs_json_key`, then reads `results_url` from that entry. (Alternative considered: fuzzy match + day-of-week tiebreak. Rejected — adds parser complexity and silent-failure surface; explicit key is one line of data per row and impossible to misread.)
+Add a **`clubs_json_key`** column to `ENDORSED.md`. Value is the exact `name` string from `clubs.json` for the intended entry. This is the load-bearing join key — generator looks up `clubs.json` by `name == clubs_json_key`, then reads `results_url` from that entry.
+
+**Startup validation (hard-fail, exit non-zero):**
+- Every `clubs_json_key` in `ENDORSED.md` MUST match exactly one entry in `clubs.json` (case-sensitive, NBSP-normalized). If any row's key matches zero or >1 entries, the generator exits non-zero and lists offenders to stderr.
+- `clubs.json` MUST have no duplicate `name` values (case-insensitive, NBSP-normalized). Generator exits non-zero on first duplicate detected.
+- Empty `clubs_json_key` cell is also a hard-fail (added to the required-field gate below).
 
 New `ENDORSED.md` columns: **Day | Time | Club | Platform | clubs_json_key | Played | Note**
 
@@ -37,23 +42,36 @@ The existing 8 rows must be backfilled with `clubs_json_key` before the generato
 
 `clubs.json` has no `slug` field — slugs only exist in the DB, derived from the bridgewebs URL at upsert time. Clubs that share a bridgewebs URL (e.g. Chelmsford Mon/Tue/Fri all hit `bridgewebs.com/chelmsford/`) share a single slug, so slug-alone joins collide.
 
+**Timezone & date contract.** `session_date` is stored as a date-only ISO string in UK local (no time component). The weekday for the join MUST come from the `ENDORSED.md` `Day` column — it is NEVER derived from `session_date` (that would re-introduce TZ drift via SQLite's UTC-based `'now'`).
+
+**Weekday encoding.** SQLite `strftime('%w', ...)` returns a **TEXT** value with **Sunday=0** convention. Python `datetime.weekday()` uses **Monday=0**. The generator MUST remap and bind as a string:
+
+```python
+DAY_TO_SQLITE_WEEKDAY = {
+    "Sun": "0", "Mon": "1", "Tue": "2", "Wed": "3",
+    "Thu": "4", "Fri": "5", "Sat": "6",
+}
+weekday = DAY_TO_SQLITE_WEEKDAY[row["Day"]]  # str, not int
+cursor.execute(SQL, (slug, weekday))         # binding an int returns 0 rows silently
+```
+
 The generator MUST use a composite `(slug, weekday)` key:
 
 ```sql
 SELECT pairs, ngs FROM sessions
 WHERE club_slug = ?
-  AND strftime('%w', session_date) = ?   -- 0=Sun, 1=Mon, ..., 6=Sat
+  AND strftime('%w', session_date) = ?   -- bind as TEXT, Sun=0..Sat=6
   AND session_date >= date('now', '-28 days')
 ORDER BY session_date DESC
 ```
 
-The slug is derived from the `clubs.json` entry's `results_url` (same derivation rule as `bridge_finder.py`).
+The slug is derived from the `clubs.json` entry's `results_url`. The generator MUST `from bridge_finder import slug_from_url` rather than re-implementing the rule (avoids drift if the canonical function changes).
 
 ## 4wk rolling-window query (new capability)
 
-No existing query in `bridge_db.py` returns a 4wk rolling window. `latest_per_club` returns only MAX(session_date); `median_pairs_4w` lives in `bridge_finder.py` and reads live-fetched data, not the DB. The generator MUST introduce the SQL above as a new query — either inline in `scripts/generate_endorsed_html.py` or added to `bridge_db.py` as `rolling_4w(slug, weekday)`. Decision deferred to implementation, but new code is required either way.
+No existing query in `bridge_db.py` returns a 4wk rolling window. `latest_per_club` returns only MAX(session_date); `median_pairs_4w` lives in `bridge_finder.py` and reads live-fetched data, not the DB. The generator MUST add a new function `rolling_4w(slug, weekday)` to `bridge_db.py` (per project convention — DB queries live in the DB module, never inline in callers) returning the rows for the SQL above.
 
-Output: mean of `pairs` and `ngs` across the returned rows. Render conventions for sparse data — see "Empty / partial data" below.
+**Mean calculation:** filter `None` values out of the result before averaging (`pairs` / `ngs` columns are nullable; `statistics.mean([None, ...])` raises). The `(partial)` tag (see below) counts **non-NULL sessions** within the 4-week window, not the total row count.
 
 ## Render schema (HTML output)
 
@@ -62,13 +80,16 @@ Each row in the rendered HTML: **Day | Time | Club | Platform | 4wk pairs | 4wk 
 (`Played` excluded for privacy; `clubs_json_key` is internal-only; `URL` is rendered as a hyperlink on the Club name, not a separate column — see Output below.)
 
 ## Output
-- One file: `dist/endorsed.html` (new `dist/` directory, gitignored — explicit "distributable artifact" location, keeps repo clean and avoids accidentally committing personal data).
+- One file: `reports/dist/endorsed.html`. Lives under `reports/` (already gitignored, matches existing generated-artifact convention). No new top-level dir.
+- Atomic write: generator writes to `<output>.tmp` then `os.replace()` to the final path. Avoids friend opening a truncated file if the generator is killed mid-write.
+- All file I/O uses `encoding="utf-8"` (matches `bridge_finder.py` / `generate_verified.py` convention).
+- All dynamic cell content (club names, notes, hrefs) is passed through `html.escape()` before templating. Five real club names contain `&` (Whitley Bay & Tynemouth, Hellesdon & Taverham, Allendale & Retford, Blewbury & Wantage, Lymington & West Wight) — un-escaped, these mangle the output.
 - Self-contained: inline CSS, no external assets, no JS required.
 - Dark theme, readable on phone + desktop.
 - Each row renders the columns above; the Club name is the hyperlink to its bridgewebs page (no separate URL column — keeps table width tight on phone).
-- Per-row staleness badge: if the underlying DB stats for a row are >30 days old, render a small visible badge ("stale", coloured) next to the 4wk columns. No behaviour change for the friend; just an honest signal.
-- Header: "Lee's endorsed UK online bridge clubs" + generation timestamp.
-- Footer: "Snapshot generated YYYY-MM-DD from bridgewebs results."
+- Per-row staleness badge: if `MAX(session_date)` for a row's `(slug, weekday)` is >28 days old (matches the rolling-window cut-off — one threshold, not two), render a small visible badge ("stale", coloured) next to the 4wk columns. No behaviour change for the friend; just an honest signal.
+- Header: "Lee's endorsed UK online bridge clubs" + **generation timestamp** in ISO-8601 UK-local `YYYY-MM-DD HH:MM` with "(UK time)" suffix — answers "when was this file built".
+- Footer: "Data as of `YYYY-MM-DD` — newest session across all 8 rows" — uses `MAX(session_date)` across the rendered rows, NOT the generation time. Answers "how fresh is the data" (different question from the header — conflating them hides staleness).
 
 ## Empty / partial / missing data behaviour
 
@@ -78,20 +99,35 @@ Each row in the rendered HTML: **Day | Time | Club | Platform | 4wk pairs | 4wk 
 
 In all cases the row is rendered — never silently dropped. The friend always sees the full 8-row table.
 
-## Correctness criterion (build-time gates)
+## Correctness criterion (build-time gates) & exit codes
 
-The generator MUST enforce both gates and exit non-zero if either fails. Catches silent join misses (the R3/R4 class of bug) at build time rather than after distribution.
+The generator MUST enforce these gates. Exit codes are distinct so callers (cron, CI, future wrappers) can distinguish clean vs degraded vs broken runs:
+
+- **Exit 0:** clean run, no warnings.
+- **Exit 1:** hard-fail — any gate below tripped, or any startup validation tripped. No output file written.
+- **Exit 2:** soft-fail — file written successfully, but at least one stderr warning emitted (e.g. missing URL, missing DB stats, partial coverage). Output is still distributable but degraded.
+
+Gates (all exit 1):
 
 1. **Row-count gate:** rendered HTML row count == `ENDORSED.md` row count. Any silent drop = exit 1.
-2. **Required-field gate:** every rendered row has non-empty `Day`, `Time`, `Club`, `Platform`. Any blank in these columns = exit 1.
+2. **Required-field gate:** every rendered row has non-empty `Day`, `Time`, `Club`, `Platform`, `clubs_json_key`. Any blank in these columns = exit 1.
+3. **clubs_json_key validation gate** (see Schema change section): every key matches exactly one `clubs.json` entry; no duplicates in `clubs.json`. Exit 1 with offender list.
 
-Missing URL / missing DB stats do NOT trip these gates — they have their own fallback render rules above.
+Missing URL / missing DB stats / partial coverage do NOT trip the gates — they have their own fallback render rules above AND trigger exit 2.
 
 ## Generator
 - New script: `scripts/generate_endorsed_html.py`.
-- Reads `ENDORSED.md`, joins to `clubs.json` by `clubs_json_key` for `results_url`, joins to DB by `(slug, weekday)` for 4wk averages (see queries above).
-- Writes `endorsed.html`.
+- Reads `ENDORSED.md`, joins to `clubs.json` by `clubs_json_key` for `results_url`, calls `bridge_db.rolling_4w(slug, weekday)` for 4wk averages (see queries above).
+- Writes `endorsed.html` (atomic — see Output).
 - Re-run manually; no automation.
+
+**ENDORSED.md parser:** split on `|`, skip the header row and the `|---|` alignment separator row, `.strip()` each cell, normalize NBSP (`\xa0`) to regular space. No third-party markdown library.
+
+**Build-step task:** create `reports/dist/` if missing. `reports/` is already gitignored — no new `.gitignore` entry needed.
+
+## Concurrency
+
+`bridge_db.py` MUST enable WAL mode + `busy_timeout=5000` once at connection setup. Applies to both `bridge_finder.py` (writer) and the new generator (reader), so the generator can read a consistent snapshot while `bridge_finder.py` writes without `SQLITE_BUSY` errors. Standard SQLite hygiene; one-line PRAGMA change in the DB module.
 
 ## Scope decisions (resolved)
 
