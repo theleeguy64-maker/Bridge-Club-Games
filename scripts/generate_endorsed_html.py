@@ -25,7 +25,7 @@ from bridge_finder import slug_from_url
 PROJECT_DIR = Path(__file__).resolve().parent.parent
 ENDORSED_MD = PROJECT_DIR / "ENDORSED.md"
 CLUBS_JSON = PROJECT_DIR / "clubs.json"
-OUTPUT_PATH = PROJECT_DIR / "reports" / "dist" / "endorsed.html"
+OUTPUT_PATH = PROJECT_DIR / "docs" / "index.html"
 
 DAY_TO_SQLITE_WEEKDAY = {
     "Sun": "0", "Mon": "1", "Tue": "2", "Wed": "3",

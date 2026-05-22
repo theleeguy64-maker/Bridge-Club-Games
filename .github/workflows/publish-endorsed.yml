@@ -1,0 +1,52 @@
+name: Publish endorsed page
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'ENDORSED.md'
+      - 'clubs.json'
+      - 'scripts/generate_endorsed_html.py'
+      - 'scripts/bridge_db.py'
+      - 'scripts/bridge_finder.py'
+      - '.github/workflows/publish-endorsed.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install runtime deps
+        run: pip install requests rich dateparser
+
+      - name: Generate docs/index.html
+        run: |
+          set +e
+          python3 scripts/generate_endorsed_html.py
+          code=$?
+          # exit 2 = soft-fail (missing DB stats etc) — still publish
+          if [ $code -ne 0 ] && [ $code -ne 2 ]; then
+            echo "::error::generator hard-failed (exit $code)"
+            exit $code
+          fi
+
+      - name: Commit if changed
+        run: |
+          if [ -n "$(git status --porcelain docs/)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add docs/
+            git commit -m "ci: regenerate docs/index.html"
+            git push
+          else
+            echo "No changes to docs/."
+          fi
