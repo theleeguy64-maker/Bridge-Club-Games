@@ -217,7 +217,7 @@ def fmt_num(v, partial):
     return s
 
 
-def render_html(rows, endorsed_count):
+def render_html(rows, endorsed_count, build_version):
     now = datetime.now().strftime("%Y-%m-%d %H:%M")
     max_dates = [r["max_date"] for r in rows if r["max_date"]]
     data_as_of = max(max_dates) if max_dates else "—"
@@ -254,10 +254,38 @@ def render_html(rows, endorsed_count):
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Bridge">
 <meta name="theme-color" content="#0e1217">
+<meta name="build-version" content="{build_version}">
 <script>
-  if ('serviceWorker' in navigator) {{
-    window.addEventListener('load', () => navigator.serviceWorker.register('sw.js'));
-  }}
+  // Version-check: defeats iOS aggressive SW caching (Pages can't send no-cache on sw.js)
+  (function() {{
+    var BUILD = "{build_version}";
+    var stored = localStorage.getItem('bcg_build');
+    if (stored && stored !== BUILD && !sessionStorage.getItem('bcg_reloaded')) {{
+      // New build detected — wipe caches + unregister SW, then hard-reload past the stale SW
+      sessionStorage.setItem('bcg_reloaded', '1');
+      localStorage.setItem('bcg_build', BUILD);
+      if ('caches' in window) {{
+        caches.keys().then(function(keys) {{
+          return Promise.all(keys.map(function(k) {{ return caches.delete(k); }}));
+        }}).then(function() {{
+          if ('serviceWorker' in navigator) {{
+            return navigator.serviceWorker.getRegistrations().then(function(regs) {{
+              return Promise.all(regs.map(function(r) {{ return r.unregister(); }}));
+            }});
+          }}
+        }}).then(function() {{
+          location.reload();
+        }});
+        return;
+      }}
+      location.reload();
+    }}
+    sessionStorage.removeItem('bcg_reloaded');
+    localStorage.setItem('bcg_build', BUILD);
+    if ('serviceWorker' in navigator) {{
+      window.addEventListener('load', function() {{ navigator.serviceWorker.register('sw.js'); }});
+    }}
+  }})();
 </script>
 <style>
   :root {{ color-scheme: dark; }}
@@ -329,19 +357,19 @@ def main():
         conn.close()
 
     rows.sort(key=lambda r: (DAY_DISPLAY_ORDER.get(r["Day"], 99), r["Time"]))
-    html_out = render_html(rows, endorsed_count=len(endorsed))
+    build_version = datetime.now().strftime("%Y%m%d-%H%M%S")
+    html_out = render_html(rows, endorsed_count=len(endorsed), build_version=build_version)
     atomic_write(OUTPUT_PATH, html_out)
 
     # Bump the service-worker version on every regen so iOS home-screen PWAs
-    # refresh on next open. The version is just the build timestamp.
+    # refresh on next open. Same version string as the HTML build tag.
     sw_path = PROJECT_DIR / "docs" / "sw.js"
     if sw_path.exists():
         sw_text = sw_path.read_text(encoding="utf-8")
-        new_version = datetime.now().strftime("%Y%m%d-%H%M%S")
         import re as _re
         sw_text_new = _re.sub(
             r"const VERSION = '[^']*';",
-            f"const VERSION = '{new_version}';",
+            f"const VERSION = '{build_version}';",
             sw_text,
             count=1,
         )
