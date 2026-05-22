@@ -32,6 +32,11 @@ DAY_TO_SQLITE_WEEKDAY = {
     "Thu": "4", "Fri": "5", "Sat": "6",
 }
 
+# Display order: Mon-first weekly calendar
+DAY_DISPLAY_ORDER = {
+    "Mon": 0, "Tue": 1, "Wed": 2, "Thu": 3, "Fri": 4, "Sat": 5, "Sun": 6,
+}
+
 EXIT_OK = 0
 EXIT_HARD_FAIL = 1
 EXIT_SOFT_FAIL = 2
@@ -313,6 +318,7 @@ def main():
     finally:
         conn.close()
 
+    rows.sort(key=lambda r: (DAY_DISPLAY_ORDER.get(r["Day"], 99), r["Time"]))
     html_out = render_html(rows, endorsed_count=len(endorsed))
     atomic_write(OUTPUT_PATH, html_out)
 
