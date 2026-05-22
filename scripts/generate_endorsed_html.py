@@ -198,7 +198,6 @@ def render_html(rows, endorsed_count):
             f'<td>{html.escape(r["Day"])}</td>'
             f'<td>{html.escape(r["Time"])}</td>'
             f'<td>{club_cell}</td>'
-            f'<td>{html.escape(r["Platform"])}</td>'
             f'<td class="num">{fmt_num(r["pairs_mean"], r["partial"])}{stale_badge}</td>'
             f'<td class="num">{fmt_num(r["ngs_mean"], r["partial"])}</td>'
             f'<td>{html.escape(r["Note"])}</td>'
@@ -245,7 +244,7 @@ def render_html(rows, endorsed_count):
 <div class="ts">Generated {now} (UK time)</div>
 <table>
   <thead>
-    <tr><th>Day</th><th>Time</th><th>Club</th><th>Platform</th><th>4wk pairs</th><th>4wk NGS</th><th>Note</th></tr>
+    <tr><th>Day</th><th>Time</th><th>Club</th><th>4wk pairs</th><th>4wk NGS</th><th>Note</th></tr>
   </thead>
   <tbody>
 {body_rows}
