@@ -23,7 +23,7 @@ To add: tell Claude "endorse <club>" (you've played it) or "to-try <club>" (cand
 | Thu | 19:00 | Noverre | RealBridge | Noverre Bridge Club (Thu Evening) |   |   | 2026-03-26 | Played 2026-03-26, 66.00%. |
 | Fri | 15:00 | Exeter | RealBridge | Exeter Bridge Club (Fri PM) |   |   | 2026-02-27 | Played 2026-02-27, 56.63%. |
 | Fri | 19:30 | Milton Keynes | RealBridge | Milton Keynes Bridge Club (Fri Evening) |   |   | 2026-05-22 | Played 2026-05-22, 49.63%. |
-| Sun | 19:00 | Cumbria Super Sunday | RealBridge | Cumbria Super Sunday |   |   | 2026-03-29 | Played 2026-03-29, 58.86%. Hosted by Cumbria County BA. |
+| Sun | 19:00 | Cumbria Super Sunday | RealBridge | Cumbria Super Sunday |   | 55.4 | 2026-03-29 | Played 2026-03-29, 58.86%. Field NGS 55.4 (SOpp from EBU). Hosted by Cumbria County BA. |
 
 ## To be played (candidates — not yet played)
 

@@ -5,7 +5,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-const VERSION = '20260603-202244';
+<<<<<<< HEAD
+const VERSION = '20260603-212607';
+=======
+const VERSION = '20260603-212537';
+>>>>>>> c701c10 (endorse: Cumbria NGS via SOpp override (field NGS not on results page))
 =======
 const VERSION = '20260603-212149';
 >>>>>>> c59dcdb (endorse: drop redundant pairs/NGS from to-be-played notes)
