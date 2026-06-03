@@ -4,7 +4,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-const VERSION = '20260603-202032';
+<<<<<<< HEAD
+const VERSION = '20260603-212157';
+=======
+const VERSION = '20260603-212149';
+>>>>>>> c59dcdb (endorse: drop redundant pairs/NGS from to-be-played notes)
 =======
 const VERSION = '20260603-211847';
 >>>>>>> 552c777 (endorse: notes show "Played <date>, <score>%" from EBU history)
