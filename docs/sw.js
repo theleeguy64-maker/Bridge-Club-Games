@@ -5,7 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-const VERSION = '20260603-212157';
+const VERSION = '20260603-202244';
 =======
 const VERSION = '20260603-212149';
 >>>>>>> c59dcdb (endorse: drop redundant pairs/NGS from to-be-played notes)
