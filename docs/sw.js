@@ -3,7 +3,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-const VERSION = '20260603-201621';
+<<<<<<< HEAD
+const VERSION = '20260603-211943';
+=======
+const VERSION = '20260603-211847';
+>>>>>>> 552c777 (endorse: notes show "Played <date>, <score>%" from EBU history)
 =======
 const VERSION = '20260603-211146';
 >>>>>>> 447c5c5 (model: three exclusive lists — Endorsed / To be played / Discarded)

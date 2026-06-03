@@ -16,14 +16,14 @@ To add: tell Claude "endorse <club>" (you've played it) or "to-try <club>" (cand
 
 | Day | Time | Club | Platform | clubs_json_key | pairs_override | ngs_override | Played | Note |
 |-----|------|------|----------|----------------|----------------|--------------|--------|------|
-| Mon | 14:00 | Ascot | RealBridge | Ascot Bridge Club (Mon PM) |   |   | 2026-05-18 | Good game. Played Mon per EBU history. |
-| Mon | 19:00 | Hellesdon & Taverham | RealBridge | Hellesdon & Taverham Bridge Club (Mon Evening) |   |   | 2026-05-25 | Played Mon (3× in EBU history). |
-| Tue | 19:00 | Chelmsford | RealBridge | Chelmsford Bridge Club (Tue Evening) |   |   | 2026-06-02 | Played Tue per EBU history. |
+| Mon | 14:00 | Ascot | RealBridge | Ascot Bridge Club (Mon PM) |   |   | 2026-05-18 | Played 2026-05-18, 55.52%. |
+| Mon | 19:00 | Hellesdon & Taverham | RealBridge | Hellesdon & Taverham Bridge Club (Mon Evening) |   |   | 2026-05-25 | Played 2026-05-25, 59.03%. |
+| Tue | 19:00 | Chelmsford | RealBridge | Chelmsford Bridge Club (Tue Evening) |   |   | 2026-06-02 | Played 2026-06-02, 55.76%. |
 | Thu | 14:10 | ACBL BBO Pairs | BBO |   | 25+ | N/A |   | Endorsed by Lee. |
-| Thu | 19:00 | Noverre | RealBridge | Noverre Bridge Club (Thu Evening) |   |   | 2026-03-26 | Played Thu (4× in EBU history). |
-| Fri | 15:00 | Exeter | RealBridge | Exeter Bridge Club (Fri PM) |   |   | 2026-02-27 | Played Fri per EBU history. |
-| Fri | 19:30 | Milton Keynes | RealBridge | Milton Keynes Bridge Club (Fri Evening) |   |   | 2026-05-22 | Played Fri (2× in EBU history). |
-| Sun | 19:00 | Cumbria Super Sunday | RealBridge | Cumbria Super Sunday |   |   | 2026-05-19 | Hosted by Cumbria County BA. Played often (the "Cumbria" games in EBU history). |
+| Thu | 19:00 | Noverre | RealBridge | Noverre Bridge Club (Thu Evening) |   |   | 2026-03-26 | Played 2026-03-26, 66.00%. |
+| Fri | 15:00 | Exeter | RealBridge | Exeter Bridge Club (Fri PM) |   |   | 2026-02-27 | Played 2026-02-27, 56.63%. |
+| Fri | 19:30 | Milton Keynes | RealBridge | Milton Keynes Bridge Club (Fri Evening) |   |   | 2026-05-22 | Played 2026-05-22, 49.63%. |
+| Sun | 19:00 | Cumbria Super Sunday | RealBridge | Cumbria Super Sunday |   |   | 2026-03-29 | Played 2026-03-29, 58.86%. Hosted by Cumbria County BA. |
 
 ## To be played (candidates — not yet played)
 
