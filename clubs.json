@@ -73,7 +73,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; plays RealBridge 1:30pm Wednesdays (confirmed from site)"
+    "notes": "EBU PM listing; plays RealBridge 1:30pm Wednesdays (confirmed from site)",
+    "status": "discarded",
+    "discard_reason": "Genuine Wed PM RealBridge but fields only 6-13 pairs (3-6.5 tables) - fails pairs >= 14"
   },
   {
     "name": "Allendale & Retford Bridge Club (Thu Evening)",
@@ -263,7 +265,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "notes": "EBU PM listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Wed PM offering is small Wednesday Fun (2-4 tables); the real Wednesday Pairs (8-12 tables) runs in the evening"
   },
   {
     "name": "Blewbury & Wantage Bridge Club (Thu Evening)",
@@ -358,7 +362,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder; Bury St Edmunds used as primary slug"
+    "notes": "EBU PM listing; time placeholder; Bury St Edmunds used as primary slug",
+    "status": "discarded",
+    "discard_reason": "Genuine Wed RealBridge but recent fields 10-13 pairs - fails pairs >= 14"
   },
   {
     "name": "Castle Cary/Sherborne Bridge Club (Wed PM)",
@@ -377,7 +383,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder; Castle Cary used as primary slug"
+    "notes": "EBU PM listing; time placeholder; Castle Cary used as primary slug",
+    "status": "discarded",
+    "discard_reason": "Wed games are F2F / GVH+SH-CC hybrid, not an online RealBridge afternoon session"
   },
   {
     "name": "Chelmsford Bridge Club (Fri PM)",
@@ -453,7 +461,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "notes": "EBU PM listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Wed RealBridge Pairs is 19:00 evening, not PM (verified on forward calendar)"
   },
   {
     "name": "Christchurch Bridge Club (Mon Eve)",
@@ -491,7 +501,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "notes": "EBU PM listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Wed PM No Fears session cancelled (low numbers); real Wednesday game is 19:15 evening F2F"
   },
   {
     "name": "Cross in Hand Bridge Club (Mon Evening)",
@@ -704,7 +716,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "notes": "EBU PM listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Site states Wed RealBridge is 19:30 evening, not PM"
   },
   {
     "name": "Finchampstead Bridge Club (Thu Evening)",
@@ -1356,7 +1370,7 @@
     "name": "Oakingham Bridge Club (Fri PM)",
     "platform": "RealBridge",
     "day": "Fri",
-    "time_uk": "14:00",
+    "time_uk": "13:55",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/oakingham/",
     "parser": "bridgewebs",
@@ -1368,14 +1382,14 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-06-03",
+    "notes": "RealBridge Pairs, 13:55, directed. Verified live on forward calendar 2026-06-03."
   },
   {
     "name": "Oakingham Bridge Club (Wed PM)",
     "platform": "RealBridge",
     "day": "Wed",
-    "time_uk": "14:00",
+    "time_uk": "13:55",
     "cost": "",
     "results_url": "https://www.bridgewebs.com/oakingham/",
     "parser": "bridgewebs",
@@ -1387,8 +1401,8 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "last_verified": "2026-06-03",
+    "notes": "RealBridge Pairs, 13:55, directed. Verified live on forward calendar 2026-06-03."
   },
   {
     "name": "Olicana Bridge Club (Thu Evening)",

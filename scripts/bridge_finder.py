@@ -97,15 +97,22 @@ def day_code(d):
 
 
 def load_clubs():
-    """Load and return clubs.json as a list of dicts, or exit with error."""
+    """Load and return clubs.json as a list of dicts, or exit with error.
+
+    Entries marked ``"status": "discarded"`` are filtered out here — they
+    failed the eligibility criteria (wrong time, F2F, cancelled, or sub-14
+    fields) and should never surface in the finder. The record is kept in
+    clubs.json (with a ``discard_reason``) so it isn't re-investigated later.
+    """
     if not CLUBS_FILE.exists():
         console.print(f"[red]clubs.json missing at {CLUBS_FILE}[/red]")
         sys.exit(1)
     try:
-        return json.loads(CLUBS_FILE.read_text(encoding="utf-8"))
+        clubs = json.loads(CLUBS_FILE.read_text(encoding="utf-8"))
     except json.JSONDecodeError as e:
         console.print(f"[red]clubs.json malformed: {e}[/red]")
         sys.exit(1)
+    return [c for c in clubs if c.get("status") != "discarded"]
 
 
 def earliest_time(time_uk_str):
