@@ -4,7 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-const VERSION = '20260603-211943';
+const VERSION = '20260603-202032';
 =======
 const VERSION = '20260603-211847';
 >>>>>>> 552c777 (endorse: notes show "Played <date>, <score>%" from EBU history)
