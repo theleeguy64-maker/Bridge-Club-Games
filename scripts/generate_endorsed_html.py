@@ -59,13 +59,25 @@ def normalize(s):
 
 
 def parse_endorsed_md(path):
-    """Parse the ENDORSED.md table. Returns list of dicts."""
-    rows = []
+    """Parse ENDORSED.md. Returns (endorsed_rows, to_play_rows).
+
+    The file has two markdown tables under `## Endorsed` and
+    `## To be played` headings. A `##` heading whose text contains
+    'to be played' switches subsequent table rows into the to-play list;
+    any other heading (or the first table) feeds the endorsed list. Each
+    table carries its own header row, so the column-zip resets per table.
+    """
+    endorsed, to_play = [], []
     with open(path, encoding="utf-8") as f:
         lines = f.readlines()
     header = None
+    target = endorsed
     for line in lines:
         line = line.rstrip("\n")
+        if line.startswith("##"):
+            target = to_play if "to be played" in line.lower() else endorsed
+            header = None  # next table supplies its own header
+            continue
         if not line.startswith("|"):
             continue
         cells = [normalize(c) for c in line.strip("|").split("|")]
@@ -74,8 +86,8 @@ def parse_endorsed_md(path):
             continue
         if all(set(c) <= set("-: ") for c in cells):  # separator row
             continue
-        rows.append(dict(zip(header, cells)))
-    return rows
+        target.append(dict(zip(header, cells)))
+    return endorsed, to_play
 
 
 def load_clubs(path):
@@ -153,7 +165,6 @@ def build_rows(endorsed, clubs, conn):
                 "url": "",
                 "pairs_mean": pairs_override, "ngs_mean": ngs_override,
                 "partial": False, "stale": False, "max_date": None,
-                "nyp": normalize(row.get("nyp", "")).lower() in ("yes", "y", "true", "1"),
             })
             continue
 
@@ -203,7 +214,6 @@ def build_rows(endorsed, clubs, conn):
             "partial": partial,
             "stale": stale,
             "max_date": max_date,
-            "nyp": normalize(row.get("nyp", "")).lower() in ("yes", "y", "true", "1"),
         })
     return out
 
@@ -219,34 +229,41 @@ def fmt_num(v, partial):
     return s
 
 
-def render_html(rows, endorsed_count, build_version):
-    now = datetime.now().strftime("%Y-%m-%d %H:%M")
-    max_dates = [r["max_date"] for r in rows if r["max_date"]]
-    data_as_of = max(max_dates) if max_dates else "—"
-
+def _render_rows(rows, *, italic):
+    """Render a list of row dicts to <tr> markup. italic=True for the
+    'to be played' section (whole row styled italic)."""
+    tr_class = ' class="to-play"' if italic else ""
     trs = []
     for r in rows:
         club_cell = html.escape(r["Club"])
         if r["url"]:
             club_cell = f'<a href="{html.escape(r["url"], quote=True)}">{html.escape(r["Club"])}</a>'
         stale_badge = ' <span class="stale">stale</span>' if r["stale"] else ""
-        nyp = r.get("nyp", False)
-        tr_class = ' class="nyp"' if nyp else ""
-        nyp_badge = ' <span class="nyp-badge">NYP</span>' if nyp else ""
         trs.append(
             f'<tr{tr_class}>'
             f'<td>{html.escape(r["Day"])}</td>'
             f'<td>{html.escape(r["Time"])}</td>'
-            f'<td>{club_cell}{nyp_badge}</td>'
+            f'<td>{club_cell}</td>'
             f'<td class="num">{fmt_num(r["pairs_mean"], r["partial"])}{stale_badge}</td>'
             f'<td class="num">{fmt_num(r["ngs_mean"], r["partial"])}</td>'
             f'<td>{html.escape(r["Note"])}</td>'
             f'</tr>'
         )
-    body_rows = "\n".join(trs)
+    return "\n".join(trs)
 
-    if len(rows) != endorsed_count:
-        die(f"row-count gate: rendered {len(rows)} != ENDORSED.md {endorsed_count}")
+
+def render_html(endorsed_rows, to_play_rows, *, endorsed_count, to_play_count, build_version):
+    now = datetime.now().strftime("%Y-%m-%d %H:%M")
+    all_rows = endorsed_rows + to_play_rows
+    max_dates = [r["max_date"] for r in all_rows if r["max_date"]]
+    data_as_of = max(max_dates) if max_dates else "—"
+
+    endorsed_body = _render_rows(endorsed_rows, italic=False)
+    to_play_body = _render_rows(to_play_rows, italic=True)
+
+    if len(endorsed_rows) != endorsed_count or len(to_play_rows) != to_play_count:
+        die(f"row-count gate: rendered {len(endorsed_rows)}+{len(to_play_rows)} != "
+            f"ENDORSED.md {endorsed_count}+{to_play_count}")
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -310,8 +327,9 @@ def render_html(rows, endorsed_count, build_version):
   a:hover {{ text-decoration: underline; }}
   .stale {{ display: inline-block; background: #5a2a2a; color: #ffb4b4; font-size: 0.7rem; padding: 0.05rem 0.4rem; border-radius: 0.25rem; margin-left: 0.4rem; }}
   .partial {{ color: #b8b86c; font-size: 0.8rem; }}
-  tr.nyp td {{ font-style: italic; color: #b8c2cc; }}
-  .nyp-badge {{ display: inline-block; background: #2a3a5a; color: #9cc0ff; font-size: 0.65rem; font-style: normal; padding: 0.05rem 0.4rem; border-radius: 0.25rem; margin-left: 0.4rem; vertical-align: middle; }}
+  tr.to-play td {{ font-style: italic; color: #b8c2cc; }}
+  h2 {{ font-size: 1.1rem; color: #b8c2cc; margin: 1.6rem 0 0.5rem; }}
+  h2 .sub {{ font-weight: 400; font-size: 0.85rem; color: #8a96a3; font-style: italic; }}
   footer {{ color: #8a96a3; font-size: 0.85rem; margin-top: 1rem; }}
   @media (max-width: 600px) {{
     body {{ padding: 0.75rem; }}
@@ -323,18 +341,28 @@ def render_html(rows, endorsed_count, build_version):
 <body>
 <h1>RealBridge Bridge Club Games</h1>
 <div class="ts">Generated {now} (UK time)</div>
+<h2>Endorsed <span class="sub">— played &amp; rated worth returning to</span></h2>
 <table>
   <thead>
     <tr><th>Day</th><th>Time</th><th>Club</th><th>4wk pairs</th><th>4wk NGS</th><th>Note</th></tr>
   </thead>
   <tbody>
-{body_rows}
+{endorsed_body}
+  </tbody>
+</table>
+<h2>To be played <span class="sub">— candidates, not yet played</span></h2>
+<table>
+  <thead>
+    <tr><th>Day</th><th>Time</th><th>Club</th><th>4wk pairs</th><th>4wk NGS</th><th>Note</th></tr>
+  </thead>
+  <tbody>
+{to_play_body}
   </tbody>
 </table>
 <footer>
 Data as of {html.escape(data_as_of)} — newest session across all rows. Pairs/NGS from bridgewebs.com rolling 4-week window.<br>
 <span class="partial">(partial)</span> = fewer than 4 same-weekday sessions in the last 28 days, so the average is based on less data than usual.<br>
-<span class="nyp-badge">NYP</span> <em>italic</em> = on trial / not yet played to a standard worth confirming.
+<em>To be played</em> = meets the criteria and worth a try, but not yet played to a standard worth confirming.
 </footer>
 </body>
 </html>
@@ -350,24 +378,31 @@ def atomic_write(path, content):
 
 
 def main():
-    endorsed = parse_endorsed_md(ENDORSED_MD)
+    endorsed, to_play = parse_endorsed_md(ENDORSED_MD)
     if not endorsed:
-        die("no rows parsed from ENDORSED.md")
+        die("no rows parsed from ENDORSED.md (Endorsed section)")
 
     clubs = load_clubs(CLUBS_JSON)
     validate_clubs_unique(clubs)
-    validate_clubs_json_keys(endorsed, clubs)
-    required_fields_gate(endorsed)
+    validate_clubs_json_keys(endorsed + to_play, clubs)
+    required_fields_gate(endorsed + to_play)
 
     conn = bridge_db.connect()
     try:
-        rows = build_rows(endorsed, clubs, conn)
+        endorsed_rows = build_rows(endorsed, clubs, conn)
+        to_play_rows = build_rows(to_play, clubs, conn)
     finally:
         conn.close()
 
-    rows.sort(key=lambda r: (DAY_DISPLAY_ORDER.get(r["Day"], 99), r["Time"]))
+    sort_key = lambda r: (DAY_DISPLAY_ORDER.get(r["Day"], 99), r["Time"])
+    endorsed_rows.sort(key=sort_key)
+    to_play_rows.sort(key=sort_key)
     build_version = datetime.now().strftime("%Y%m%d-%H%M%S")
-    html_out = render_html(rows, endorsed_count=len(endorsed), build_version=build_version)
+    html_out = render_html(
+        endorsed_rows, to_play_rows,
+        endorsed_count=len(endorsed), to_play_count=len(to_play),
+        build_version=build_version,
+    )
     atomic_write(OUTPUT_PATH, html_out)
 
     # Bump the service-worker version on every regen so iOS home-screen PWAs
@@ -385,7 +420,8 @@ def main():
         if sw_text_new != sw_text:
             atomic_write(sw_path, sw_text_new)
 
-    print(f"Wrote {OUTPUT_PATH.relative_to(PROJECT_DIR)} ({len(rows)} rows, {len(_warnings)} warnings)")
+    print(f"Wrote {OUTPUT_PATH.relative_to(PROJECT_DIR)} "
+          f"({len(endorsed_rows)} endorsed + {len(to_play_rows)} to-play, {len(_warnings)} warnings)")
     sys.exit(EXIT_SOFT_FAIL if _warnings else EXIT_OK)
 
 

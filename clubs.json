@@ -1167,7 +1167,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "notes": "EBU PM listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Day mismatch: listed Fri PM but Lee played it on a Thursday (2025-11-20 per EBU); not a reliable Fri PM entry (2026-06-03)"
   },
   {
     "name": "Leighton Buzzard Bridge Club (Mon Evening)",
