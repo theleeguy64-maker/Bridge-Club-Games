@@ -1,6 +1,10 @@
 // Service worker — network-first for the page, so updates appear on every refresh.
 // Bumped automatically by the generator on every regen.
-const VERSION = '20260603-193830';
+<<<<<<< HEAD
+const VERSION = '20260603-205505';
+=======
+const VERSION = '20260603-205410';
+>>>>>>> fa504e3 (endorse: add 8 games incl. Oakingham (fills Wed gap))
 const CACHE = `bcg-${VERSION}`;
 
 self.addEventListener('install', e => {

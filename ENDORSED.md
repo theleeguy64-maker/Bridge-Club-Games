@@ -19,3 +19,11 @@ To add: tell Claude "endorse <club>" with a one-line note. To remove: "unendorse
 | Mon | 19:00 | Chelmsford | RealBridge | Chelmsford Bridge Club (Mon Eve) |   |   | 2026-05-19 | Endorsed by Lee. |
 | Tue | 19:00 | Chelmsford | RealBridge | Chelmsford Bridge Club (Tue Evening) |   |   | 2026-05-19 | Endorsed by Lee. |
 | Sun | 19:00 | EBU Super Sunday Special | RealBridge | EBU Super Sunday Special |   |   | 2026-05-19 | Endorsed by Lee. |
+| Mon | 14:00 | Milton Keynes | RealBridge | Milton Keynes Bridge Club (Mon PM) |   |   | 2026-06-03 | Endorsed by Lee. ~27 pairs, 53.8% NGS. |
+| Mon | 19:00 | Leighton Buzzard | RealBridge | Leighton Buzzard Bridge Club (Mon Evening) |   |   | 2026-06-03 | Endorsed by Lee. ~30 pairs, 55.2% NGS. |
+| Tue | 19:00 | Newbury | RealBridge | Newbury Bridge Club (Tue Evening) |   |   | 2026-06-03 | Endorsed by Lee. ~16 pairs, 53.8% NGS. |
+| Wed | 19:30 | Milton Keynes | RealBridge | Milton Keynes Bridge Club (Wed Evening) |   |   | 2026-06-03 | Endorsed by Lee. ~27 pairs, 53.8% NGS. |
+| Thu | 19:15 | Allendale & Retford | RealBridge | Allendale & Retford Bridge Club (Thu Evening) |   |   | 2026-06-03 | Endorsed by Lee. ~20 pairs, 55.0% NGS. |
+| Fri | 13:30 | Chelmsford | RealBridge | Chelmsford Bridge Club (Fri PM) |   |   | 2026-06-03 | Endorsed by Lee. ~18 pairs, 52.2% NGS. |
+| Wed | 13:55 | Oakingham | RealBridge | Oakingham Bridge Club (Wed PM) |   |   | 2025-11-12 | Endorsed by Lee. Played 59.92% w/ Giorgio Provenza. ~16 pairs. Fills the Wed gap. |
+| Fri | 13:55 | Oakingham | RealBridge | Oakingham Bridge Club (Fri PM) |   |   | 2025-11-12 | Endorsed by Lee. Same 13:55 game as Wed. ~16 pairs. |
