@@ -72,7 +72,10 @@ def refresh_club(conn, name, slug, results_url, target_dates, day_label):
 
 
 def main():
-    endorsed = parse_endorsed_md(ENDORSED_MD)
+    # parse_endorsed_md returns (endorsed, to_be_played); both lists drive
+    # the public page, so refresh stats for all rows across both sections.
+    endorsed_section, to_play_section = parse_endorsed_md(ENDORSED_MD)
+    endorsed = endorsed_section + to_play_section
     clubs = json.load(open(CLUBS_JSON, encoding="utf-8"))
     by_name = {normalize(c["name"]): c for c in clubs}
 

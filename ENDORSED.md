@@ -23,7 +23,7 @@ To add: tell Claude "endorse <club>" (you've played it) or "to-try <club>" (cand
 | Thu | 19:00 | Noverre | RealBridge | Noverre Bridge Club (Thu Evening) |   |   | 2026-03-26 | Played Thu (4× in EBU history). |
 | Fri | 15:00 | Exeter | RealBridge | Exeter Bridge Club (Fri PM) |   |   | 2026-02-27 | Played Fri per EBU history. |
 | Fri | 19:30 | Milton Keynes | RealBridge | Milton Keynes Bridge Club (Fri Evening) |   |   | 2026-05-22 | Played Fri (2× in EBU history). |
-| Sun | 19:00 | EBU Super Sunday Special | RealBridge | EBU Super Sunday Special |   |   | 2026-05-19 | Endorsed by Lee. |
+| Sun | 19:00 | Cumbria Super Sunday | RealBridge | Cumbria Super Sunday |   |   | 2026-05-19 | Hosted by Cumbria County BA. Played often (the "Cumbria" games in EBU history). |
 
 ## To be played (candidates — not yet played)
 

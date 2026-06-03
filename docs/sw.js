@@ -3,7 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-const VERSION = '20260603-211233';
+const VERSION = '20260603-211512';
 =======
 const VERSION = '20260603-211146';
 >>>>>>> 447c5c5 (model: three exclusive lists — Endorsed / To be played / Discarded)
