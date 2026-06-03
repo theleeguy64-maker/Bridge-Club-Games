@@ -16,7 +16,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-05-04",
-    "notes": "Verified from club site: Tue 3pm RealBridge"
+    "notes": "Verified from club site: Tue 3pm RealBridge",
+    "status": "discarded",
+    "discard_reason": "Recent fields 10 pairs, NGS 47.5% — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Abbeygate Bridge Club (Mon Eve)",
@@ -35,7 +37,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-05-17",
-    "notes": "RealBridge Mon 19:00 (members only £2.50)"
+    "notes": "RealBridge Mon 19:00 (members only £2.50)",
+    "status": "discarded",
+    "discard_reason": "Recent fields 15 pairs, NGS 51.2% — fails NGS > 51.5% (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Abingdon Bridge Club (Tue Evening)",
@@ -54,7 +58,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-05-04",
-    "notes": "Verified from club site: Tue 7pm RealBridge (varies by week-of-month)"
+    "notes": "Verified from club site: Tue 7pm RealBridge (varies by week-of-month)",
+    "status": "discarded",
+    "discard_reason": "Recent fields 12 pairs — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Afternoon Bridge Club (Wed PM)",
@@ -151,7 +157,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-05-17",
-    "notes": "RealBridge Mon 19:00, £1 visitor"
+    "notes": "RealBridge Mon 19:00, £1 visitor",
+    "status": "discarded",
+    "discard_reason": "Recent fields 11 pairs — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Banbury Online Bridge Club (Thu Evening)",
@@ -170,7 +178,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-05-07",
-    "notes": "Verified from club site 2026-05-07: Thu 19:00"
+    "notes": "Verified from club site 2026-05-07: Thu 19:00",
+    "status": "discarded",
+    "discard_reason": "Recent fields 13 pairs — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Basingstoke Bridge Club (Fri Evening)",
@@ -189,7 +199,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "RealBridge Fri evening, time not pinned on bridgewebs home page; placeholder 19:00"
+    "notes": "RealBridge Fri evening, time not pinned on bridgewebs home page; placeholder 19:00",
+    "status": "discarded",
+    "discard_reason": "Recent fields 10 pairs, NGS 49.7% — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Basingstoke Bridge Club (Tue Evening)",
@@ -208,7 +220,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-05-04",
-    "notes": "Verified from club site: Tue evening 9-High pairs RealBridge; time placeholder"
+    "notes": "Verified from club site: Tue evening 9-High pairs RealBridge; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Recent fields 10 pairs, NGS 49.7% — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Beckenham Bridge Club (Thu PM)",
@@ -246,7 +260,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-05-07",
-    "notes": "Verified from club site 2026-05-07: Thu 19:00 online"
+    "notes": "Verified from club site 2026-05-07: Thu 19:00 online",
+    "status": "discarded",
+    "discard_reason": "Recent fields 5 pairs — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Bewdley Bridge Club (Wed PM)",
@@ -286,7 +302,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-05-07",
-    "notes": "Verified from club site 2026-05-07: Thu 19:00"
+    "notes": "Verified from club site 2026-05-07: Thu 19:00",
+    "status": "discarded",
+    "discard_reason": "Recent fields 13 pairs — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Bracknell Forest Bridge Club (Mon Eve)",
@@ -305,7 +323,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-05-17",
-    "notes": "RealBridge Mon 19:20, £2 visitor"
+    "notes": "RealBridge Mon 19:20, £2 visitor",
+    "status": "discarded",
+    "discard_reason": "Recent fields 7 pairs — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Bradshaw Bridge Club (Tue Evening)",
@@ -324,7 +344,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-05-04",
-    "notes": "Verified from club site: Tue 7:30pm RealBridge"
+    "notes": "Verified from club site: Tue 7:30pm RealBridge",
+    "status": "discarded",
+    "discard_reason": "Recent fields 12 pairs — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Bridport Bridge Club (Thu Evening)",
@@ -522,7 +544,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "notes": "EBU evening listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Recent fields 12 pairs — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Dorchester/Summertown Bridge Club (Mon Evening)",
@@ -541,7 +565,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder; Summertown BC (Oxford) used as primary slug"
+    "notes": "EBU evening listing; time placeholder; Summertown BC (Oxford) used as primary slug",
+    "status": "discarded",
+    "discard_reason": "Recent fields 13 pairs, NGS 54.4% — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Dragon Pairs / Oliver Cowan",
@@ -640,7 +666,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "notes": "EBU PM listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Results page empty — no published sessions; no verifiable online Fri PM game (live-checked 2026-06-03)"
   },
   {
     "name": "Exeter Bridge Club (Fri PM)",
@@ -775,7 +803,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-05-22",
-    "notes": "RealBridge Thu 19:00, verified"
+    "notes": "RealBridge Thu 19:00, verified",
+    "status": "discarded",
+    "discard_reason": "Club Suspended per site banner; no sized club sessions running (live-checked 2026-06-03)"
   },
   {
     "name": "Friendly Friday Bridge Club (Fri PM)",
@@ -794,7 +824,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder; distinct from Friendly Online BC (BBO)"
+    "notes": "EBU PM listing; time placeholder; distinct from Friendly Online BC (BBO)",
+    "status": "discarded",
+    "discard_reason": "Recent fields 10 pairs — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Friendly Online BC",
@@ -813,7 +845,9 @@
     },
     "how_to_enter_summary": "Open, ~$2 BB$",
     "last_verified": "2026-04-30",
-    "notes": "Run by Oliver Cowan on BBO"
+    "notes": "Run by Oliver Cowan on BBO",
+    "status": "discarded",
+    "discard_reason": "Recent fields 12 pairs — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Fulbourn/Thursday Bridge Club (Fri Evening)",
@@ -851,7 +885,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-05-04",
-    "notes": "Verified from club site: Tue 7pm RealBridge (joint with Keyworth)"
+    "notes": "Verified from club site: Tue 7pm RealBridge (joint with Keyworth)",
+    "status": "discarded",
+    "discard_reason": "Recent fields 13 pairs, NGS 42.5% — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Gravesend Bridge Club (Fri Evening)",
@@ -870,7 +906,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "notes": "EBU evening listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Recent fields 9 pairs — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Great Yarmouth Bridge Club (Mon Evening)",
@@ -984,7 +1022,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "notes": "EBU evening listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Recent fields 12 pairs, NGS 57.3% — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Hitchin Bridge Club (Tue Evening)",
@@ -1003,7 +1043,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-05-04",
-    "notes": "Verified from club site: Tue 7pm RealBridge online (also has 1:15pm F2F — excluded)"
+    "notes": "Verified from club site: Tue 7pm RealBridge online (also has 1:15pm F2F — excluded)",
+    "status": "discarded",
+    "discard_reason": "Recent fields 13 pairs, NGS 50.5% — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Hunstanton Sunday Pairs",
@@ -1041,7 +1083,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU PM listing; time placeholder"
+    "notes": "EBU PM listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Recent fields 10 pairs, NGS 48.2% — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Keyworth Bridge Club (Mon PM)",
@@ -1060,7 +1104,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-05-17",
-    "notes": "RealBridge Mon 13:00 (also Wed F2F 13:00, Tue eve combined w/ Grantham)"
+    "notes": "RealBridge Mon 13:00 (also Wed F2F 13:00, Tue eve combined w/ Grantham)",
+    "status": "discarded",
+    "discard_reason": "Recent fields 10 pairs, NGS 48.2% — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Keyworth Bridge Club (Tue Evening)",
@@ -1079,7 +1125,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-05-04",
-    "notes": "Verified from club site: Tue 7pm RealBridge (joint with Grantham)"
+    "notes": "Verified from club site: Tue 7pm RealBridge (joint with Grantham)",
+    "status": "discarded",
+    "discard_reason": "Recent fields 10 pairs, NGS 48.2% — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Lane End Bridge Club (Mon Evening)",
@@ -1098,7 +1146,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "notes": "EBU evening listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Recent fields 12 pairs — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Larkhill Bridge Club (Fri PM)",
@@ -1174,7 +1224,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "notes": "EBU evening listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Recent fields 14 pairs, NGS 49.4% — fails NGS > 51.5% (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Louth Duplicate Bridge Club (Wed Evening)",
@@ -1193,7 +1245,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "notes": "EBU evening listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Recent fields 14 pairs, NGS 49.4% — fails NGS > 51.5% (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Lymington & West Wight Bridge Club (Thu Evening)",
@@ -1212,7 +1266,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-05-22",
-    "notes": "RealBridge Thu 19:00, verified — West Solent BC, logon by 18:50"
+    "notes": "RealBridge Thu 19:00, verified — West Solent BC, logon by 18:50",
+    "status": "discarded",
+    "discard_reason": "Thu West Solent RealBridge shows no field data; the sized Wed games are F2F (live-checked 2026-06-03)"
   },
   {
     "name": "Maidstone Bridge Club (Wed Evening)",
@@ -1231,7 +1287,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "notes": "EBU evening listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Recent fields 21 pairs, NGS 47.1% — fails NGS > 51.5% (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Milton Keynes Bridge Club (Fri Evening)",
@@ -1326,7 +1384,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "notes": "EBU evening listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Recent fields 7 pairs, NGS 53.4% — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Noverre Bridge Club (Thu Evening)",
@@ -1364,7 +1424,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-05-22",
-    "notes": "RealBridge Thu 18:15, verified — early evening"
+    "notes": "RealBridge Thu 18:15, verified — early evening",
+    "status": "discarded",
+    "discard_reason": "Recent fields 7 pairs — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Oakingham Bridge Club (Fri PM)",
@@ -1421,7 +1483,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-05-22",
-    "notes": "RealBridge Thu 19:15, verified — Duplicate Pairs"
+    "notes": "RealBridge Thu 19:15, verified — Duplicate Pairs",
+    "status": "discarded",
+    "discard_reason": "Recent fields 13 pairs, NGS 46.6% — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Pershore Bridge Club (Fri Evening)",
@@ -1440,7 +1504,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "notes": "EBU evening listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Recent fields 13 pairs, NGS 48.5% — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Pershore Bridge Club (Wed Evening)",
@@ -1459,7 +1525,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "notes": "EBU evening listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Recent fields 13 pairs, NGS 48.5% — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Pinner Bridge Club (Thu Evening)",
@@ -1497,7 +1565,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "notes": "EBU evening listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Recent fields 13 pairs, NGS 52.9% — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Settle Bridge Club (Tue Evening)",
@@ -1515,8 +1585,8 @@
       "notes": ""
     },
     "how_to_enter_summary": "Check club site",
-    "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "last_verified": "2026-06-03",
+    "notes": "Tuesday Evening Session, online, 9-13 tables (18-26 pairs). Verified live 2026-06-03."
   },
   {
     "name": "SmaxiBridge (Mon Evening)",
@@ -1535,7 +1605,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder; beginner/improver focused"
+    "notes": "EBU evening listing; time placeholder; beginner/improver focused",
+    "status": "discarded",
+    "discard_reason": "Recent fields 11 pairs — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Stretford Bridge Club (Fri Evening)",
@@ -1611,7 +1683,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "notes": "EBU evening listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Recent fields 17 pairs, NGS 46.5% — fails NGS > 51.5% (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Wallingford Bridge Club (Tue PM)",
@@ -1630,7 +1704,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-05-04",
-    "notes": "Verified from club site: Tue 1:45pm RealBridge online (also has F2F evening — excluded)"
+    "notes": "Verified from club site: Tue 1:45pm RealBridge online (also has F2F evening — excluded)",
+    "status": "discarded",
+    "discard_reason": "Recent fields 17 pairs, NGS 46.5% — fails NGS > 51.5% (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Wallingford Bridge Club (Wed Evening)",
@@ -1649,7 +1725,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "notes": "EBU evening listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Recent fields 17 pairs, NGS 46.5% — fails NGS > 51.5% (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Warminster Bridge Club (Wed Evening)",
@@ -1668,7 +1746,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "notes": "EBU evening listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Recent fields 8 pairs, NGS 48.5% — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Warrington Bridge Club (Fri Evening)",
@@ -1687,7 +1767,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "notes": "EBU evening listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Recent fields 8 pairs, NGS 52.3% — fails pairs >= 14 (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Welwyn Garden City Bridge Club (Tue Evening)",
@@ -1706,7 +1788,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "notes": "EBU evening listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Recent fields 15 pairs, NGS 50.1% — fails NGS > 51.5% (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Welwyn Garden City Bridge Club (Wed Evening)",
@@ -1725,7 +1809,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "notes": "EBU evening listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Recent fields 15 pairs, NGS 50.1% — fails NGS > 51.5% (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Whitley Bay & Tynemouth (afternoon)",
@@ -1744,7 +1830,9 @@
     },
     "how_to_enter_summary": "Bank £3 to club before session",
     "last_verified": "2026-04-30",
-    "notes": ""
+    "notes": "",
+    "status": "discarded",
+    "discard_reason": "Recent fields 21 pairs, NGS 50.3% — fails NGS > 51.5% (DB, last ~4 sessions, swept 2026-06-03)"
   },
   {
     "name": "Whitley Bay & Tynemouth (evening)",
@@ -1763,6 +1851,8 @@
     },
     "how_to_enter_summary": "Bank £3 to club before session",
     "last_verified": "2026-04-30",
-    "notes": ""
+    "notes": "",
+    "status": "discarded",
+    "discard_reason": "Recent fields 21 pairs, NGS 50.3% — fails NGS > 51.5% (DB, last ~4 sessions, swept 2026-06-03)"
   }
 ]
