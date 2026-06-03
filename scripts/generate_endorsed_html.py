@@ -153,6 +153,7 @@ def build_rows(endorsed, clubs, conn):
                 "url": "",
                 "pairs_mean": pairs_override, "ngs_mean": ngs_override,
                 "partial": False, "stale": False, "max_date": None,
+                "nyp": normalize(row.get("nyp", "")).lower() in ("yes", "y", "true", "1"),
             })
             continue
 
@@ -202,6 +203,7 @@ def build_rows(endorsed, clubs, conn):
             "partial": partial,
             "stale": stale,
             "max_date": max_date,
+            "nyp": normalize(row.get("nyp", "")).lower() in ("yes", "y", "true", "1"),
         })
     return out
 
@@ -228,11 +230,14 @@ def render_html(rows, endorsed_count, build_version):
         if r["url"]:
             club_cell = f'<a href="{html.escape(r["url"], quote=True)}">{html.escape(r["Club"])}</a>'
         stale_badge = ' <span class="stale">stale</span>' if r["stale"] else ""
+        nyp = r.get("nyp", False)
+        tr_class = ' class="nyp"' if nyp else ""
+        nyp_badge = ' <span class="nyp-badge">NYP</span>' if nyp else ""
         trs.append(
-            f'<tr>'
+            f'<tr{tr_class}>'
             f'<td>{html.escape(r["Day"])}</td>'
             f'<td>{html.escape(r["Time"])}</td>'
-            f'<td>{club_cell}</td>'
+            f'<td>{club_cell}{nyp_badge}</td>'
             f'<td class="num">{fmt_num(r["pairs_mean"], r["partial"])}{stale_badge}</td>'
             f'<td class="num">{fmt_num(r["ngs_mean"], r["partial"])}</td>'
             f'<td>{html.escape(r["Note"])}</td>'
@@ -305,6 +310,8 @@ def render_html(rows, endorsed_count, build_version):
   a:hover {{ text-decoration: underline; }}
   .stale {{ display: inline-block; background: #5a2a2a; color: #ffb4b4; font-size: 0.7rem; padding: 0.05rem 0.4rem; border-radius: 0.25rem; margin-left: 0.4rem; }}
   .partial {{ color: #b8b86c; font-size: 0.8rem; }}
+  tr.nyp td {{ font-style: italic; color: #b8c2cc; }}
+  .nyp-badge {{ display: inline-block; background: #2a3a5a; color: #9cc0ff; font-size: 0.65rem; font-style: normal; padding: 0.05rem 0.4rem; border-radius: 0.25rem; margin-left: 0.4rem; vertical-align: middle; }}
   footer {{ color: #8a96a3; font-size: 0.85rem; margin-top: 1rem; }}
   @media (max-width: 600px) {{
     body {{ padding: 0.75rem; }}
@@ -326,7 +333,8 @@ def render_html(rows, endorsed_count, build_version):
 </table>
 <footer>
 Data as of {html.escape(data_as_of)} — newest session across all rows. Pairs/NGS from bridgewebs.com rolling 4-week window.<br>
-<span class="partial">(partial)</span> = fewer than 4 same-weekday sessions in the last 28 days, so the average is based on less data than usual.
+<span class="partial">(partial)</span> = fewer than 4 same-weekday sessions in the last 28 days, so the average is based on less data than usual.<br>
+<span class="nyp-badge">NYP</span> <em>italic</em> = on trial / not yet played to a standard worth confirming.
 </footer>
 </body>
 </html>

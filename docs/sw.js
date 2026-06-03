@@ -1,7 +1,11 @@
 // Service worker — network-first for the page, so updates appear on every refresh.
 // Bumped automatically by the generator on every regen.
 <<<<<<< HEAD
-const VERSION = '20260603-195622';
+<<<<<<< HEAD
+const VERSION = '20260603-210036';
+=======
+const VERSION = '20260603-210002';
+>>>>>>> 059da91 (endorse: NYP marker for on-trial games; drop Fri Oakingham)
 =======
 const VERSION = '20260603-205410';
 >>>>>>> fa504e3 (endorse: add 8 games incl. Oakingham (fills Wed gap))
