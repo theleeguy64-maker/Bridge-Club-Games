@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Bridge">
 <meta name="theme-color" content="#0e1217">
-<meta name="build-version" content="20260603-115230">
+<meta name="build-version" content="20260603-132755">
 <script>
   // Auto-update flow:
   //   1. On page load, register/update SW. Forces SW update check past the 10-min
@@ -20,7 +20,7 @@
   //   3. The reload-once guard (sessionStorage) prevents infinite loops.
   (function() {
     if (!('serviceWorker' in navigator)) return;
-    var BUILD = "20260603-115230";
+    var BUILD = "20260603-132755";
     var reloadOnce = function(reason) {
       if (sessionStorage.getItem('bcg_reloaded_for') === BUILD) return;
       sessionStorage.setItem('bcg_reloaded_for', BUILD);
@@ -70,7 +70,7 @@
 </head>
 <body>
 <h1>RealBridge Bridge Club Games</h1>
-<div class="ts">Generated 2026-06-03 11:52 (UK time)</div>
+<div class="ts">Generated 2026-06-03 13:27 (UK time)</div>
 <table>
   <thead>
     <tr><th>Day</th><th>Time</th><th>Club</th><th>4wk pairs</th><th>4wk NGS</th><th>Note</th></tr>
