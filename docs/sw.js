@@ -2,7 +2,7 @@
 // Bumped automatically by the generator on every regen.
 <<<<<<< HEAD
 <<<<<<< HEAD
-const VERSION = '20260603-210036';
+const VERSION = '20260603-200140';
 =======
 const VERSION = '20260603-210002';
 >>>>>>> 059da91 (endorse: NYP marker for on-trial games; drop Fri Oakingham)
