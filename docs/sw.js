@@ -6,7 +6,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-const VERSION = '20260603-202658';
+<<<<<<< HEAD
+const VERSION = '20260603-212955';
+=======
+const VERSION = '20260603-212830';
+>>>>>>> 7def29c (align + cleanup: delete MK Mon, doc the 3-list model, gitignore secrets)
 =======
 const VERSION = '20260603-212537';
 >>>>>>> c701c10 (endorse: Cumbria NGS via SOpp override (field NGS not on results page))

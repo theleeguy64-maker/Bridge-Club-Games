@@ -29,7 +29,7 @@ Separate from the **Bridge Tournaments** project (`~/Casual_claude/Bridge_Tourna
 | `scripts/bridge_db.py` | SQLite store: schema, session upserts, classifier (pairs ≥ 14, NGS > 52% → `include`) |
 | `scripts/bridge_query.py` | Query DB for qualifying clubs: `python3 scripts/bridge_query.py Tue [all]` |
 | `scripts/launcher_template.sh` | Backup of the Desktop `.command` launcher |
-| `clubs.json` | Canonical list of UK weekday + weekend bridge clubs (100 entries) |
+| `clubs.json` | Canonical list of UK weekday + weekend bridge clubs (92 entries; entries with `status: "discarded"` are filtered out by the finder) |
 | `reports/` | Generated markdown reports per date (gitignored) |
 | `data/bridge_results.db` | SQLite — accumulates per-session pairs+NGS history (gitignored) |
 | `docs/superpowers/specs/2026-04-30-bridge-finder-design.md` | The design spec |
@@ -43,6 +43,16 @@ Separate from the **Bridge Tournaments** project (`~/Casual_claude/Bridge_Tourna
 - **bridgewebs serves ISO-8859-1** — decode `response.content` explicitly.
 - **HTTP timeout 10s, custom User-Agent, no retries.**
 - **Time filter:** PM/eve only (≥12:00).
+
+## Game state model — three mutually exclusive lists
+
+Every game sits in exactly one of three states:
+
+1. **Endorsed** — Lee has actually played it AND rated it worth returning to. Lives in the **Endorsed** table of `ENDORSED.md`. Real `Played` date + score, verified against Lee's EBU results history (most recent date/score; the EBU **SOpp** column is the field NGS when a club's results page doesn't publish NGS — e.g. Cumbria).
+2. **To be played** — meets the criteria (pairs ≥ 14, NGS > 51.5% with a 0.5 tolerance on the 52% bar) and worth trying, but not yet played (or not yet played to a standard worth confirming, e.g. Oakingham). Lives in the **To be played** table of `ENDORSED.md`, rendered as a separate italic section on the public page.
+3. **Discarded** — fails the criteria (wrong day/time, F2F, cancelled, sub-14 pairs, or low NGS). Stored as `status: "discarded"` + `discard_reason` on the `clubs.json` entry; `load_clubs()` filters these out so they never surface in the finder.
+
+`ENDORSED.md` therefore has **two tables** (Endorsed / To be played); `generate_endorsed_html.py` parses both and renders two page sections. Both tables drive the public page and have their stats refreshed by `refresh_endorsed_stats.py`.
 
 ## Running
 

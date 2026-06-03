@@ -29,7 +29,6 @@ To add: tell Claude "endorse <club>" (you've played it) or "to-try <club>" (cand
 
 | Day | Time | Club | Platform | clubs_json_key | pairs_override | ngs_override | Played | Note |
 |-----|------|------|----------|----------------|----------------|--------------|--------|------|
-| Mon | 14:00 | Milton Keynes | RealBridge | Milton Keynes Bridge Club (Mon PM) |   |   |   | Not yet played (Lee plays the Fri MK). |
 | Mon | 19:00 | Chelmsford | RealBridge | Chelmsford Bridge Club (Mon Eve) |   |   |   | Not yet played (Lee plays the Tue Chelmsford). |
 | Mon | 19:00 | Leighton Buzzard | RealBridge | Leighton Buzzard Bridge Club (Mon Evening) |   |   |   | Not yet played. |
 | Tue | 19:00 | Newbury | RealBridge | Newbury Bridge Club (Tue Evening) |   |   |   | Not yet played. |

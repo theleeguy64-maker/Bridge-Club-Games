@@ -1329,7 +1329,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-05-17",
-    "notes": "RealBridge Mon 14:00, verified"
+    "notes": "RealBridge Mon 14:00, verified",
+    "status": "discarded",
+    "discard_reason": "Removed from to-be-played by Lee 2026-06-03 — plays the Fri MK, not interested in the Mon PM slot"
   },
   {
     "name": "Milton Keynes Bridge Club (Wed Evening)",
