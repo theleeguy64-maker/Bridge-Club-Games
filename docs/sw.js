@@ -7,7 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-const VERSION = '20260717-090532';
+const VERSION = '20260718-084549';
 =======
 const VERSION = '20260603-212830';
 >>>>>>> 7def29c (align + cleanup: delete MK Mon, doc the 3-list model, gitignore secrets)
