@@ -87,9 +87,23 @@ After the standard `lee show` output, append a **"Public page status"** section 
 - Whether `ENDORSED.md` or `clubs.json` has uncommitted changes (if yes, flag: "public page will refresh on next push")
 
 ### Lee fresh (project addition)
-Before the standard `lee fresh` steps, if there are uncommitted changes to `ENDORSED.md` or `clubs.json`:
-1. Run `python3 scripts/refresh_endorsed_stats.py` to refresh stats from bridgewebs
-2. Run `python3 scripts/generate_endorsed_html.py` to regenerate `docs/index.html`
-3. Stage the resulting changes alongside the user's edits — the single commit covers data + rendered page together
+**Never generate `docs/` locally.** CI is the sole producer of `docs/index.html` and
+`docs/sw.js`. Commit `ENDORSED.md` / `clubs.json` edits on their own and push — the
+`publish-endorsed` workflow refreshes stats, regenerates both files, and commits them back.
 
-Skip the refresh+regenerate if no uncommitted changes to those two files (the daily cron + push trigger handle the rest).
+**Before any local commit, `git pull` first.** CI pushes to `main` on every run (daily
+cron + every qualifying push), so local `main` goes stale quickly.
+
+**Why:** the generator stamps a fresh `build_version` timestamp into `index.html` and
+`sw.js` on every run. When both a local `lee fresh` and CI regenerated them, the two
+timestamps guaranteed a divergence and the next rebase conflicted — that's the recurring
+conflict, and it's also how `sw.js` shipped with 7 nested conflict markers for 7 commits
+(fixed 2026-07-21). One producer, no conflict.
+
+**Do not gitignore `docs/`.** GitHub Pages serves these files committed on `main`
+(`build_type: legacy`, `source: /docs`). Ignoring them would 404 the live site *and* make
+CI's `git status --porcelain docs/` check see nothing to commit, so it would never
+republish.
+
+To preview the page locally, run `python3 scripts/generate_endorsed_html.py` and then
+`git checkout -- docs/` before committing — never stage the result.
