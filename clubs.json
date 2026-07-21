@@ -927,7 +927,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "notes": "EBU evening listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Face-to-face — no RealBridge or BBO mention anywhere on club site; site refers to capacity at 'our current venue' for the Monday evening session (F2F sweep 2026-07-21). Curated lists are RealBridge only."
   },
   {
     "name": "Hadley Wood Bridge Club (Fri Evening)",
