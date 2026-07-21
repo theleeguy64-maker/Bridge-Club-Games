@@ -232,10 +232,55 @@ def result_url(slug, event_id):
     return f"https://www.bridgewebs.com/cgi-bin/bwor/bw.cgi?club={slug}&pid=display_rank&event={event_id}"
 
 
+def _strip_news(soup):
+    """Remove the club news/noticeboard sidebar from a parsed page.
+
+    Bridgewebs embeds the club homepage's news panel into EVERY results page.
+    That panel lists forthcoming sessions by name, so a naive text search for
+    'RealBridge' matches on a face-to-face event's own results page. Anything
+    that identifies an event MUST run on the page with this panel removed.
+    """
+    for div in soup.find_all("div", class_=re.compile("news", re.I)):
+        div.decompose()
+    return soup
+
+
+def parse_event_title(html_bytes):
+    """Return an event's own title (e.g. 'RealBridge - Swiss Pairs'), or None.
+
+    Reads <span class="page_title">, which holds the per-event name, after
+    stripping the news sidebar. A leading date prefix is removed, so
+    '20th July 2026 - BBO - Monday Gentle Duplicate' → 'BBO - Monday Gentle
+    Duplicate'.
+    """
+    soup = _strip_news(BeautifulSoup(html_bytes.decode("iso-8859-1"), "html.parser"))
+    span = soup.find("span", class_="page_title")
+    if not span:
+        return None
+    title = re.sub(r"\s+", " ", span.get_text(" ", strip=True)).strip()
+    # Drop a leading "<day><suffix> <Month> <year> - " prefix if present.
+    title = re.sub(r"^\d{1,2}(?:st|nd|rd|th)\s+\w+\s+\d{4}\s*-\s*", "", title)
+    return title or None
+
+
+def event_platform(title):
+    """Classify an event title as 'RealBridge', 'BBO', 'F2F', or None."""
+    if not title:
+        return None
+    t = title.lower()
+    if "realbridge" in t or "real bridge" in t:
+        return "RealBridge"
+    if "bbo" in t or "bridge base" in t:
+        return "BBO"
+    if "clubhouse" in t:
+        return "F2F"
+    return None
+
+
 def parse_result_page(html_bytes):
     """Parse a single result page. Return (pair_count, ngs_avg) — either may be None."""
     html = html_bytes.decode("iso-8859-1")
-    soup = BeautifulSoup(html, "html.parser")
+    soup = _strip_news(BeautifulSoup(html, "html.parser"))
 
     pair_count = None
     for table in soup.find_all("table"):

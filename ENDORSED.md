@@ -31,7 +31,8 @@ To add: tell Claude "endorse <club>" (you've played it) or "to-try <club>" (cand
 |-----|------|------|----------|----------------|----------------|--------------|--------|------|
 | Mon | 19:00 | Chelmsford | RealBridge | Chelmsford Bridge Club (Mon Eve) |   |   |   | Not yet played (Lee plays the Tue Chelmsford). |
 | Mon | 19:00 | Leighton Buzzard | RealBridge | Leighton Buzzard Bridge Club (Mon Evening) |   |   |   | Not yet played. |
-| Tue | 19:00 | Newbury | RealBridge | Newbury Bridge Club (Tue Evening) |   |   |   | Not yet played. |
+| Tue | 19:30 | Ascot | RealBridge | Ascot Bridge Club (Tue Evening) |   |   |   | Not yet played (Lee plays the Mon Ascot). Strongest Tue field — NGS 57.9%. |
+| Tue | 19:30 | Harpenden | RealBridge | Harpenden Bridge Club (Tue Evening) |   |   |   | Not yet played. |
 | Wed | 13:55 | Oakingham | RealBridge | Oakingham Bridge Club (Wed PM) |   |   | 2025-11-12 | On trial. Played once (59.92%) but NGS ~49 that day. Fills the Wed gap. |
 | Wed | 19:30 | Milton Keynes | RealBridge | Milton Keynes Bridge Club (Wed Evening) |   |   |   | Not yet played (Lee plays the Fri MK). |
 | Thu | 19:15 | Allendale & Retford | RealBridge | Allendale & Retford Bridge Club (Thu Evening) |   |   |   | Not yet played. |

@@ -411,7 +411,15 @@ def main():
     if sw_path.exists():
         sw_text = sw_path.read_text(encoding="utf-8")
         import re as _re
-        sw_text_new = _re.sub(
+        # Refuse to touch a file carrying merge-conflict markers. The version
+        # rewrite below is count=1, so on a conflicted file it would patch the
+        # first marker-wrapped line and leave the wreckage in place — which is
+        # how sw.js shipped broken for 7 commits (fixed 2026-07-21).
+        if _re.search(r"^(<{7}|={7}|>{7})", sw_text, _re.M):
+            warn("docs/sw.js has merge-conflict markers — version NOT bumped. "
+                 "Resolve the conflict, then re-run.")
+            sw_text = None
+        sw_text_new = None if sw_text is None else _re.sub(
             r"const VERSION = '[^']*';",
             f"const VERSION = '{build_version}';",
             sw_text,

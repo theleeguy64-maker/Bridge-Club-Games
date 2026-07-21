@@ -1369,7 +1369,9 @@
     },
     "how_to_enter_summary": "Check club site",
     "last_verified": "2026-04-30",
-    "notes": "EBU evening listing; time placeholder"
+    "notes": "EBU evening listing; time placeholder",
+    "status": "discarded",
+    "discard_reason": "Face-to-face, not RealBridge — every session titled 'F2F at St G's' (verified 2026-07-21 via parse_event_title). Curated lists are RealBridge only."
   },
   {
     "name": "Northampton Bridge Club (Tue Evening)",

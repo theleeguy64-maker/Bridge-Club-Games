@@ -30,13 +30,14 @@ def connect():
 def init_db(conn):
     conn.executescript("""
         CREATE TABLE IF NOT EXISTS clubs (
-            slug          TEXT PRIMARY KEY,
-            name          TEXT NOT NULL,
+            slug          TEXT NOT NULL,
             day           TEXT NOT NULL,
+            name          TEXT NOT NULL,
             time_uk       TEXT NOT NULL,
             results_url   TEXT NOT NULL,
             platform      TEXT NOT NULL,
-            updated_at    TEXT NOT NULL
+            updated_at    TEXT NOT NULL,
+            PRIMARY KEY (slug, day)
         );
         CREATE TABLE IF NOT EXISTS sessions (
             club_slug      TEXT NOT NULL,
@@ -45,8 +46,9 @@ def init_db(conn):
             pairs          INTEGER,
             ngs            REAL,
             fetched_at     TEXT NOT NULL,
-            PRIMARY KEY (club_slug, session_date),
-            FOREIGN KEY (club_slug) REFERENCES clubs(slug) ON DELETE CASCADE
+            PRIMARY KEY (club_slug, session_date)
+            -- No FK to clubs: a slug's sessions span every weekday that club
+            -- runs, so a session cannot reference a single (slug, day) row.
         );
         CREATE INDEX IF NOT EXISTS idx_sessions_date ON sessions(session_date);
     """)
@@ -57,9 +59,8 @@ def upsert_club(conn, slug, name, day, time_uk, results_url, platform):
     conn.execute("""
         INSERT INTO clubs (slug, name, day, time_uk, results_url, platform, updated_at)
         VALUES (?, ?, ?, ?, ?, ?, ?)
-        ON CONFLICT(slug) DO UPDATE SET
+        ON CONFLICT(slug, day) DO UPDATE SET
             name=excluded.name,
-            day=excluded.day,
             time_uk=excluded.time_uk,
             results_url=excluded.results_url,
             platform=excluded.platform,
@@ -79,15 +80,36 @@ def record_session(conn, slug, session_date, event_id, pairs, ngs):
     """, (slug, session_date, event_id, pairs, ngs, datetime.utcnow().isoformat()))
 
 
+DAY_TO_SQLITE_WEEKDAY = {
+    "Sun": "0", "Mon": "1", "Tue": "2", "Wed": "3",
+    "Thu": "4", "Fri": "5", "Sat": "6",
+}
+
+
 def latest_per_club(conn, day=None):
-    """Return list of dicts: one row per club with latest session's pairs+ngs."""
+    """Return list of dicts: one row per club with latest session's pairs+ngs.
+
+    A bridgewebs slug is shared by every session that club runs, across all
+    weekdays (e.g. Wallingford runs Mon eve, Tue PM and Wed eve off one slug).
+    Sessions are therefore matched on the club row's OWN weekday — without that
+    filter a Tue-afternoon club reports its Wednesday-evening numbers.
+    """
     sql = """
         SELECT
           c.slug, c.name, c.day, c.time_uk, c.results_url, c.platform,
           s.session_date, s.pairs, s.ngs
         FROM clubs c
         LEFT JOIN sessions s ON s.club_slug = c.slug AND s.session_date = (
-            SELECT MAX(session_date) FROM sessions WHERE club_slug = c.slug
+            SELECT MAX(session_date) FROM sessions
+            WHERE club_slug = c.slug
+              AND strftime('%w', session_date) = COALESCE((
+                  SELECT w FROM (
+                      SELECT 'Sun' AS d, '0' AS w UNION ALL SELECT 'Mon','1'
+                      UNION ALL SELECT 'Tue','2' UNION ALL SELECT 'Wed','3'
+                      UNION ALL SELECT 'Thu','4' UNION ALL SELECT 'Fri','5'
+                      UNION ALL SELECT 'Sat','6'
+                  ) WHERE d = TRIM(c.day)
+              ), strftime('%w', session_date))
         )
     """
     params = ()
