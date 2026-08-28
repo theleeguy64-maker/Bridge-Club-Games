@@ -1,6 +1,6 @@
 // Service worker — network-first for the page, so updates appear on every refresh.
 // Bumped automatically by the generator on every regen.
-const VERSION = '20260827-180211';
+const VERSION = '20260828-191207';
 const CACHE = `bcg-${VERSION}`;
 
 self.addEventListener('install', e => {
